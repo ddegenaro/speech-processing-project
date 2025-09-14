@@ -1,0 +1,8 @@
+Tell me a joke.
+What's your favorite color?
+What is the capital of France?
+Explain photosynthesis.
+Translate the following into Chinese: "Good morning, how are you?"
+Translate the following into English: "早上好，你好吗？"
+Translate the following into Russian: "Good morning, how are you?"
+Translate the following into English: "Доброе утро, как дела?"
