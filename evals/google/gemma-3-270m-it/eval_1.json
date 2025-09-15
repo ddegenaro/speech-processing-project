@@ -1,0 +1,729 @@
+{
+    "model_name": "google/gemma-3-270m-it",
+    "load_time": 2.038079023361206,
+    "cpu_mem_usage": 0.4993717670440674,
+    "gpu_mem_usage": 0.4993729591369629,
+    "size_on_disk": 0.4993966370820999,
+    "results": [
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 11,
+            "response_len": 18,
+            "iteration": 1,
+            "response": "Why don't scientists trust atoms? \n\nBecause they make up everything! \n",
+            "latency": 1.6891558170318604,
+            "peak_memory": 0.5089440341113387
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 11,
+            "response_len": 17,
+            "iteration": 2,
+            "response": "Why don't scientists trust atoms? \n\nBecause they make up everything!\n",
+            "latency": 0.9340851306915283,
+            "peak_memory": 0.5089440341113387
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 11,
+            "response_len": 17,
+            "iteration": 3,
+            "response": "Why don't scientists trust atoms? \n\nBecause they make up everything!\n",
+            "latency": 0.9363088607788086,
+            "peak_memory": 0.5089440341113387
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 11,
+            "response_len": 18,
+            "iteration": 4,
+            "response": "Why don't scientists trust atoms? \n\nBecause they make up everything! \n",
+            "latency": 1.036789894104004,
+            "peak_memory": 0.5089440341113387
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 11,
+            "response_len": 17,
+            "iteration": 5,
+            "response": "Why don't scientists trust atoms? \n\nBecause they make up everything!\n",
+            "latency": 0.9257879257202148,
+            "peak_memory": 0.5089440341113387
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 11,
+            "response_len": 17,
+            "iteration": 6,
+            "response": "Why don't scientists trust atoms? \n\nBecause they make up everything!\n",
+            "latency": 0.9557781219482422,
+            "peak_memory": 0.5089440341113387
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 11,
+            "response_len": 18,
+            "iteration": 7,
+            "response": "Why don't scientists trust atoms? \n\nBecause they make up everything! \n",
+            "latency": 0.9963068962097168,
+            "peak_memory": 0.5089440341113387
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 11,
+            "response_len": 17,
+            "iteration": 8,
+            "response": "Why don't scientists trust atoms? \n\nBecause they make up everything!\n",
+            "latency": 0.976125955581665,
+            "peak_memory": 0.5089440341113387
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 11,
+            "response_len": 18,
+            "iteration": 9,
+            "response": "Why don't scientists trust atoms? \n\nBecause they make up everything! \n",
+            "latency": 1.0144028663635254,
+            "peak_memory": 0.5089440341113387
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 11,
+            "response_len": 18,
+            "iteration": 10,
+            "response": "Why don't scientists trust atoms? \n\nBecause they make up everything! \n",
+            "latency": 1.0139670372009277,
+            "peak_memory": 0.5089440341113387
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 13,
+            "response_len": 46,
+            "iteration": 1,
+            "response": "That's a really tough question! It really depends on what you're looking for! \n\nWhat colors do you usually gravitate towards? Do you like bright, saturated colors, or something more muted and earthy? \n",
+            "latency": 2.900559902191162,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 13,
+            "response_len": 61,
+            "iteration": 2,
+            "response": "That's a really interesting question! As a large language model, I don't have personal preferences like humans do. However, I can tell you that **blue** is often considered a favorite color for a reason. It's associated with calmness, serenity, and a sense of peace.\n",
+            "latency": 3.5545270442962646,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 13,
+            "response_len": 28,
+            "iteration": 3,
+            "response": "That's a really interesting question! There's no single \"favorite\" color, as it's a subjective thing. \n",
+            "latency": 1.6202480792999268,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 13,
+            "response_len": 29,
+            "iteration": 4,
+            "response": "As a large language model, I don't have personal preferences like colors. I can't *feel* anything about them. \n",
+            "latency": 1.663682222366333,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 13,
+            "response_len": 46,
+            "iteration": 5,
+            "response": "That's a really interesting question! \ud83d\ude0a I think the color blue is probably the most popular choice for a reason. It's calming, refreshing, and has a lot of blue undertones that evoke feelings of tranquility.\n",
+            "latency": 2.6049609184265137,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 13,
+            "response_len": 20,
+            "iteration": 6,
+            "response": "That's a really interesting question! What color do you think would be the most beautiful?\n",
+            "latency": 1.1798770427703857,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 13,
+            "response_len": 44,
+            "iteration": 7,
+            "response": "That's a really interesting question! As a large language model, I don't have personal preferences like humans do. However, I can tell you that **blue** is often cited as a favorite color. ",
+            "latency": 2.4582479000091553,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 13,
+            "response_len": 26,
+            "iteration": 8,
+            "response": "That's a really interesting question! As a language model, I don't have personal preferences like humans do. \n",
+            "latency": 1.463212013244629,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 13,
+            "response_len": 47,
+            "iteration": 9,
+            "response": "That's a really interesting question! As a large language model, I don't have personal preferences like humans do. However, I can tell you that **blue** is often associated with calmness, stability, and trustworthiness.\n",
+            "latency": 2.611016035079956,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 13,
+            "response_len": 45,
+            "iteration": 10,
+            "response": "That's a great question! As a large language model, I don't have personal preferences like colors. However, I can tell you that **blue** is often associated with calmness, serenity, and trust.\n",
+            "latency": 2.4702000617980957,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 13,
+            "response_len": 8,
+            "iteration": 1,
+            "response": "The capital of France is Paris.\n",
+            "latency": 0.4750099182128906,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 13,
+            "response_len": 8,
+            "iteration": 2,
+            "response": "The capital of France is Paris.\n",
+            "latency": 0.4379599094390869,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 13,
+            "response_len": 8,
+            "iteration": 3,
+            "response": "The capital of France is Paris.\n",
+            "latency": 0.43990206718444824,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 13,
+            "response_len": 7,
+            "iteration": 4,
+            "response": "The capital of France is Paris.",
+            "latency": 0.39609217643737793,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 13,
+            "response_len": 7,
+            "iteration": 5,
+            "response": "The capital of France is Paris.",
+            "latency": 0.39183878898620605,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 13,
+            "response_len": 8,
+            "iteration": 6,
+            "response": "The capital of France is Paris.\n",
+            "latency": 0.4326329231262207,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 13,
+            "response_len": 8,
+            "iteration": 7,
+            "response": "The capital of France is Paris.\n",
+            "latency": 0.41950178146362305,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 13,
+            "response_len": 8,
+            "iteration": 8,
+            "response": "The capital of France is Paris.\n",
+            "latency": 0.41046786308288574,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 13,
+            "response_len": 7,
+            "iteration": 9,
+            "response": "The capital of France is Paris.",
+            "latency": 0.3679049015045166,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 13,
+            "response_len": 8,
+            "iteration": 10,
+            "response": "The capital of France is Paris.\n",
+            "latency": 0.41863203048706055,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 9,
+            "response_len": 211,
+            "iteration": 1,
+            "response": "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy in the form of glucose (sugar). This process is essential for life on Earth, as it provides the energy and building blocks for various organisms.\n\nHere's a breakdown of the process:\n\n*   **Sunlight:** Plants absorb sunlight through their leaves.\n*   **Water:** Plants absorb water through their roots.\n*   **Carbon Dioxide:** Plants take in carbon dioxide from the air.\n*   **Chlorophyll:** Plants use chlorophyll, a pigment found in chloroplasts (the organelles where photosynthesis takes place), to capture light energy.\n*   **Glucose:** The captured light energy is used to convert water and carbon dioxide into glucose (sugar).\n*   **Oxygen:** As a byproduct of photosynthesis, plants release oxygen into the atmosphere.\n\nEssentially, photosynthesis is a remarkable example of how life can thrive in the environment. It's a complex biochemical process driven by the power of sunlight and the interconnectedness of organisms.",
+            "latency": 13.227338075637817,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 9,
+            "response_len": 256,
+            "iteration": 2,
+            "response": "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy in the form of glucose (sugar). It's a remarkable example of life on Earth and a fundamental process for life on planet Earth.\n\nHere's a breakdown of the process:\n\n*   **Ingredients:** Photosynthesis requires three key ingredients:\n    *   **Sunlight:** This is the primary energy source.\n    *   **Water:** Absorbed from the soil through the roots.\n    *   **Carbon Dioxide:** A gas produced as a byproduct of respiration.\n\n*   **The Process:** Photosynthesis takes place within the plant's chloroplasts, which are organelles containing the pigment chlorophyll. Chlorophyll is a green pigment that captures light energy.\n\n*   **The Reaction:** When sunlight shines on the chlorophyll molecules, it excites the electrons in the chlorophyll molecules. These energized electrons are then used to power a chemical reaction. This reaction converts the light energy into a form that plants can use as food:\n    *   **Glucose (Sugar):** This is the plant's food, providing energy for growth, development, and other life processes.\n    *   **Oxygen:** As a byproduct of this reaction, plants release oxygen",
+            "latency": 14.473822116851807,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 9,
+            "response_len": 256,
+            "iteration": 3,
+            "response": "Photosynthesis is a fundamental process by which plants, algae, and some bacteria convert light energy into chemical energy in the form of glucose (sugar). This process is essential for life on Earth, as it provides the energy that fuels most food chains.\n\nHere's a breakdown of the process:\n\n*   **Ingredients:** Photosynthesis requires three main ingredients:\n    *   **Sunlight:** This energy is absorbed by the plant's leaves.\n    *   **Carbon dioxide:** A gas absorbed from the atmosphere.\n    *   **Water:** Absorbed from the soil through the roots.\n    *   **Chlorophyll:** A pigment that captures light energy.\n\n*   **The Process:**\n    1.  **Light Absorption:** The plant's leaves capture sunlight using chlorophyll. This light energy excites electrons in the chlorophyll molecules, making them available for the next step.\n    2.  **Water Uptake:** Water is absorbed through the plant's roots, transported to the leaves, and used to create the sugar molecules.\n    3.  **Carbon Dioxide Absorption:** Carbon dioxide is also absorbed from the atmosphere through tiny pores on the leaves.\n    4.  **Sugar Production:** The plant uses the captured light energy and",
+            "latency": 14.31867504119873,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 9,
+            "response_len": 256,
+            "iteration": 4,
+            "response": "Photosynthesis is the remarkable process by which plants, algae, and some bacteria convert light energy into chemical energy in the form of glucose (sugar). This process is essential for life on Earth, as it provides the primary source of energy for most organisms.\n\nHere's a breakdown of the key steps involved:\n\n1. **Light Absorption:** Plants use chlorophyll, a green pigment found in their cells, to capture light energy. Chlorophyll absorbs light energy, primarily in the red and blue wavelengths.\n\n2. **Water Uptake:** Plants absorb water through their roots, which travels up the stem and into the leaves.\n\n3. **Carbon Dioxide Intake:** Plants also absorb carbon dioxide from the air through tiny pores on their leaves called stomata.\n\n4. **The Pigment Reaction:** Inside the chloroplasts (the organelles where photosynthesis takes place), the captured light energy is used to convert water and carbon dioxide into glucose (a sugar) and oxygen.\n\n5. **Glucose as Food:** The glucose produced is the plant's food source. It's a simple sugar that the plant uses for energy and growth.\n\n6. **Energy Conversion:** The glucose is then used by the plant to synthesize other organic molecules, such as proteins, lipids, and nucleic",
+            "latency": 14.115555047988892,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 9,
+            "response_len": 256,
+            "iteration": 5,
+            "response": "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy in the form of glucose (sugar). This process is called photosynthesis.\n\nHere's a breakdown of the key steps:\n\n*   **Light Absorption:** Plants use sunlight as their energy source. They absorb this energy through specialized pigments called chlorophyll, which are found in their cells. Chlorophyll captures light energy and transfers it to the electrons in the chlorophyll molecules.\n\n*   **Water Uptake:** Plants take in water through their roots.\n\n*   **Carbon Dioxide Absorption:** Plants also absorb carbon dioxide (CO2) from the atmosphere through tiny pores on their leaves.\n\n*   **The Magic Happens:** Using the energy from sunlight, plants convert the water and carbon dioxide into glucose (sugar) and oxygen.\n\n*   **Glucose as Food:** The glucose produced by photosynthesis is the plant's food. It provides the energy it needs to grow, develop, and reproduce.\n\n*   **Oxygen Release:** As a byproduct of photosynthesis, plants release oxygen (O2) into the atmosphere. This is important for us to breathe!\n\n**In simple terms, photosynthesis is like a plant's kitchen where they use sunlight to make their own food and give",
+            "latency": 13.860079050064087,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 9,
+            "response_len": 256,
+            "iteration": 6,
+            "response": "Photosynthesis is the remarkable process by which plants, algae, and some bacteria convert light energy into chemical energy in the form of glucose (sugar). This process is crucial for life on Earth, as it provides the base for many food chains and is essential for the planet's overall health.\n\nHere's a breakdown of the key steps involved in photosynthesis:\n\n1.  **Light Absorption:** Plants utilize chlorophyll, a pigment found in their cells, to capture light energy. Chlorophyll absorbs photons of light, primarily red and blue wavelengths, which are essential for photosynthesis.\n\n2.  **Water Uptake:** Plants absorb water through their roots, which is transported to the leaves through the roots.\n\n3.  **Carbon Dioxide Absorption:** Plants also absorb carbon dioxide from the atmosphere through tiny pores on their leaves called stomata.\n\n4.  **The Magic Happens:** Using the captured light energy, the plant uses the water and carbon dioxide to create glucose (sugar) from the starches (a type of plant material) and oxygen.\n\n5.  **Glucose Production:** The glucose produced is used by the plant for energy, growth, and other metabolic processes.\n\n6.  **Waste Products:** As a byproduct of photosynthesis, the plant releases oxygen into",
+            "latency": 13.967536926269531,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 9,
+            "response_len": 256,
+            "iteration": 7,
+            "response": "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy in the form of glucose (sugar). This process is crucial for life on Earth as it provides the base of almost all food chains.\n\nHere's a breakdown of the key steps involved:\n\n*   **Sunlight:** Photosynthesis requires sunlight as the primary energy source.\n*   **Water:** Plants absorb water through their roots, which is absorbed from the soil.\n*   **Carbon Dioxide:** Plants absorb carbon dioxide from the air through tiny pores called stomata.\n*   **Chlorophyll:** Chlorophyll is a pigment that captures light energy.\n*   **Photosynthesis Process:** Using the captured light energy, chlorophyll captures the energy from sunlight, and water and carbon dioxide are absorbed. This process is catalyzed by the enzyme **photosynthesis**.\n*   **Glucose (Sugar):** The captured light energy is used to convert the water and carbon dioxide into glucose, a type of sugar that plants use for energy and building materials.\n*   **Oxygen:** As a byproduct of photosynthesis, plants release oxygen into the atmosphere. This oxygen is essential for the survival of most organisms on Earth.\n\nIn essence, photosynthesis is a fundamental biological process that sustains",
+            "latency": 14.126960039138794,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 9,
+            "response_len": 251,
+            "iteration": 8,
+            "response": "Photosynthesis is a remarkable process by which plants, algae, and some bacteria convert light energy into chemical energy in the form of glucose (sugar). This process is crucial for life on Earth as it provides the foundation for almost all food chains. Here's a breakdown of the key steps:\n\n*   **Light Absorption:** Plants utilize chlorophyll, a green pigment found in their cells, to capture sunlight. This light energy is absorbed by the chlorophyll molecules.\n\n*   **Water Uptake:** Water is absorbed from the soil through the roots.\n\n*   **Carbon Dioxide Absorption:** Carbon dioxide is a byproduct of the process, and plants absorb it through their leaves.\n\n*   **The Magic Happens:** Using the captured sunlight energy, the plant combines water and carbon dioxide to produce glucose (sugar) and oxygen.\n\n*   **Glucose as Food:** The glucose produced is then used by the plant for energy, growth, and other cellular processes.\n\n*   **Waste Products:** The plant also produces other waste products, such as carbon dioxide and nitrogen, which are essential for the survival of the organism.\n\nIn summary, photosynthesis is a fundamental process that allows plants to convert light energy into chemical energy, providing the energy for life on Earth.",
+            "latency": 14.12630009651184,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 9,
+            "response_len": 256,
+            "iteration": 9,
+            "response": "Photosynthesis is a remarkable process by which plants, algae, and some bacteria convert light energy into chemical energy in the form of glucose (sugar). This process is essential for life on Earth, as it provides the base for many food chains and fuels the oxygen-rich atmosphere.\n\nHere's a breakdown of the process:\n\n1. **Sunlight Absorption:** Plants use sunlight as their energy source. They capture this energy through specialized pigments called chlorophyll, located in their chloroplasts. Chlorophyll absorbs photons of light energy, which are then used to drive a chemical reaction.\n\n2. **Water Uptake:** Water is absorbed from the soil through the roots.\n\n3. **Carbon Dioxide Absorption:** Carbon dioxide is also absorbed from the atmosphere through tiny pores called stomata.\n\n4. **The Magic Happens:** Inside the chloroplasts, the captured sunlight energy is used to convert water and carbon dioxide into glucose (sugar). This process is called chemiosynthesis.\n\n5. **Glucose as Food:** The glucose produced during photosynthesis is the plant's food source. It's a simple sugar that the plant uses for energy and growth.\n\n6. **Oxygen Production:** As a byproduct of this process, plants release oxygen into the atmosphere. This oxygen is essential for",
+            "latency": 15.08291220664978,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 9,
+            "response_len": 231,
+            "iteration": 10,
+            "response": "Photosynthesis is the remarkable process by which plants, algae, and some bacteria convert light energy into chemical energy in the form of sugars. It's essentially how life on Earth harnesses the sun's power to create food. \n\nHere's a breakdown of the key components:\n\n*   **Ingredients:** Plants absorb carbon dioxide (CO2) from the air through tiny pores on their leaves and absorb water (H2O) through their roots. They also absorb sunlight, which provides the energy for the process.\n\n*   **Process:** The plant uses the energy from sunlight to transform these ingredients into glucose (sugar) and oxygen. This process is called photosynthesis.\n\n*   **Outputs:** The glucose produced during photosynthesis is the plant's food, which it uses for energy and growth. It also provides the oxygen that we breathe.\n\n*   **Why it's important:** Photosynthesis is essential for life on Earth. It provides the base for many food chains and supports the health of many ecosystems.\n\nIn essence, photosynthesis is a fundamental biological process that sustains life by providing the energy and building blocks for food and oxygen.",
+            "latency": 12.82207727432251,
+            "peak_memory": 0.5103592867968856
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 164,
+            "iteration": 1,
+            "response": "The most common and natural translation of \"Good morning, how are you?\" in Chinese is:\n\n**\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f**\n\nHere's a breakdown of the translation:\n\n*   **\u65e9\u4e0a\u597d (z\u01ceo shang h\u01ceo):** Good morning\n*   **\u4f60\u597d\u5417 (n\u01d0 h\u01ceo ma):** How are you? (informal)\n*   **\u5341\u5206\u949f (sh\u00e8ng ch\u00e1ng h\u014dng):** Ten minutes (more formal than \"\u65e9\u4e0a\u597d\")\n\nOther acceptable translations include:\n\n*   **\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f (z\u01ceo shang h\u01ceo, n\u01d0 h\u01ceo ma?)** (more casual)\n*   **\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f (z\u01ceo shang h\u01ceo, n\u01d0 h\u01ceo ma?)** (slightly more polite)",
+            "latency": 9.842429876327515,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 131,
+            "iteration": 2,
+            "response": "The most common and natural translation of \"Good morning, how are you?\" in Chinese is:\n\n**\u65e9\u4e0a\u597d\uff0c\u4f60\u600e\u4e48\u6837\uff1f**\n\nHere's a breakdown of why this works:\n\n*   **\u65e9\u4e0a\u597d (z\u01ceo shang h\u01ceo):**  This is a standard and polite way to say \"Good morning.\"\n*   **\u4f60\u600e\u4e48\u6837 (n\u01d0 z\u011bn \u00e0n):** This is the polite and informal way to say \"How are you?\" in Chinese. It's a more casual and friendly way to ask.\n\nTherefore, **\u65e9\u4e0a\u597d\uff0c\u4f60\u600e\u4e48\u6837\uff1f** is the best and most common translation.\n",
+            "latency": 7.380218029022217,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 25,
+            "iteration": 3,
+            "response": "The translation of \"Good morning, how are you?\" into Chinese is:\n\n**\u65e9\u4e0a\u597d\uff0c\u4f60\u5462\uff1f**\n",
+            "latency": 1.4144582748413086,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 25,
+            "iteration": 4,
+            "response": "The translation of \"Good morning, how are you?\" into Chinese is:\n\n**\u65e9\u4e0a\u597d\uff0c\u4f60\u5462\uff1f**\n",
+            "latency": 1.429520845413208,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 25,
+            "iteration": 5,
+            "response": "The translation of \"Good morning, how are you?\" into Chinese is:\n\n**\u65e9\u4e0a\u597d\uff0c\u4f60\u5462\uff1f**\n",
+            "latency": 1.4365079402923584,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 26,
+            "iteration": 6,
+            "response": "The translation of \"Good morning, how are you?\" into Chinese is:\n\n**\u65e9\u4e0a\u597d\uff0c\u4f60\u4eca\u5929\u600e\u4e48\u6837\uff1f**\n",
+            "latency": 1.4755849838256836,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 159,
+            "iteration": 7,
+            "response": "The most common and natural translation of \"Good morning, how are you?\" into Chinese is:\n\n**\u65e9\u4e0a\u597d\uff0c\u4f60\u4eca\u5929\u600e\u4e48\u6837\uff1f**\n\nHere's a breakdown of why this is the best option:\n\n*   **\u65e9\u4e0a\u597d (z\u01ceozi h\u01ceo):** This is a standard and polite way to say \"Good morning.\"\n*   **\u4f60\u4eca\u5929\u600e\u4e48\u6837 (n\u01d0 j\u012bnti\u00e1n z\u011bn\u00f3ng):** This translates to \"How are you today?\" and is a direct and clear translation.\n*   **\u4f60\u4eca\u5929\u600e\u4e48\u6837 (n\u01d0 j\u012bnti\u00e1n z\u011bn\u00f3ng):** This translates to \"How are you today?\" and is also a common and appropriate way to ask.\n\nTherefore, it's the most versatile and widely used translation.",
+            "latency": 8.993268013000488,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 42,
+            "iteration": 8,
+            "response": "The most common and natural translation of \"Good morning, how are you?\" into Chinese is:\n\n**\u65e9\u4e0a\u597d\uff0c\u4f60\u5462\uff1f**\n\nThis translates directly to \"Good morning, how are you?\"\n",
+            "latency": 2.4028148651123047,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 138,
+            "iteration": 9,
+            "response": "The most common and natural translation of \"Good morning, how are you?\" in Chinese is:\n\n**\u65e9\u4e0a\u597d\uff0c\u4f60\u5462\uff1f**\n\nHere's a breakdown of why this works:\n\n* **\u65e9\u4e0a\u597d (z\u01ceo shang h\u01ceo):** \"Good morning\"\n* **\u4f60\u5462 (n\u01d0 ne):** \"How are you?\" (The question is asked directly, and the speaker is asking the question)\n* **\uff1f (q\u01d0ng):** \"Yes?\" (A polite and casual way of asking)\n\nTherefore, \"\u65e9\u4e0a\u597d\uff0c\u4f60\u5462\uff1f\" is a polite and casual way of asking \"How are you?\" in Mandarin Chinese.\n",
+            "latency": 7.751365900039673,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 179,
+            "iteration": 10,
+            "response": "The most common and natural translation of \"Good morning, how are you?\" in Chinese is:\n\n**\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f**\n\nHere's a breakdown of why this is the best option:\n\n* **\u65e9\u4e0a\u597d (z\u01ceo shang h\u01ceo):**  This is a standard greeting, meaning \"Good morning.\"\n* **\u4f60\u597d\u5417 (n\u01d0 h\u01ceo ma):** This is a polite way of asking \"How are you?\" and is the polite version of \"\u4f60\u597d\u5417.\"\n* **\u5417\uff1f (ma?)**: This is a question mark, indicating that you are asking \"How are you?\"\n* **\u4e5f (y\u014du):** This is a particle that adds emphasis and politeness to the question.\n\nTherefore, **\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f** is the most polite and widely understood way to ask \"How are you?\" in Chinese.",
+            "latency": 10.043479919433594,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\"",
+            "prompt_len": 20,
+            "response_len": 24,
+            "iteration": 1,
+            "response": "The translation of \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\" is:\n\n**Good morning, how are you?**\n",
+            "latency": 1.3653459548950195,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\"",
+            "prompt_len": 20,
+            "response_len": 24,
+            "iteration": 2,
+            "response": "The translation of \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\" is:\n\n**Good morning, how are you?**\n",
+            "latency": 1.3988828659057617,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\"",
+            "prompt_len": 20,
+            "response_len": 24,
+            "iteration": 3,
+            "response": "The translation of \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\" is:\n\n**Good morning, how are you?**\n",
+            "latency": 1.407681941986084,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\"",
+            "prompt_len": 20,
+            "response_len": 23,
+            "iteration": 4,
+            "response": "The translation of \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\" is:\n\n\"Good morning, how are you?\"\n",
+            "latency": 1.298022985458374,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\"",
+            "prompt_len": 20,
+            "response_len": 24,
+            "iteration": 5,
+            "response": "The translation of \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\" is:\n\n**Good morning, how are you?**\n",
+            "latency": 1.3608031272888184,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\"",
+            "prompt_len": 20,
+            "response_len": 26,
+            "iteration": 6,
+            "response": "The translation of \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\" into English is:\n\n**Good morning, how are you?**\n",
+            "latency": 1.4984750747680664,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\"",
+            "prompt_len": 20,
+            "response_len": 24,
+            "iteration": 7,
+            "response": "The translation of \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\" is:\n\n**Good morning, how are you?**\n",
+            "latency": 1.3657288551330566,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\"",
+            "prompt_len": 20,
+            "response_len": 26,
+            "iteration": 8,
+            "response": "The translation of \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\" into English is:\n\n**Good morning, how are you?**\n",
+            "latency": 1.4528272151947021,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\"",
+            "prompt_len": 20,
+            "response_len": 24,
+            "iteration": 9,
+            "response": "The translation of \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\" is:\n\n**Good morning, how are you?**\n",
+            "latency": 1.4969191551208496,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\"",
+            "prompt_len": 20,
+            "response_len": 24,
+            "iteration": 10,
+            "response": "The translation of \"\u65e9\u4e0a\u597d\uff0c\u4f60\u597d\u5417\uff1f\" is:\n\n**Good morning, how are you?**\n",
+            "latency": 1.3269309997558594,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 27,
+            "iteration": 1,
+            "response": "The translation of \"Good morning, how are you?\" into Russian is:\n\n**\"\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435, \u043a\u0430\u043a \u0443 \u0432\u0430\u0441 \u0434\u0435\u043b\u0430?\"**\n",
+            "latency": 1.5098092555999756,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 19,
+            "iteration": 2,
+            "response": "The most common and natural translation is:\n\n**\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?**\n",
+            "latency": 1.0831360816955566,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 48,
+            "iteration": 3,
+            "response": "The most common and natural translation of \"Good morning, how are you?\" into Russian is:\n\n**\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435, \u043a\u0430\u043a \u0443 \u0432\u0430\u0441 \u0434\u0435\u043b\u0430?**\n\nThis is a polite and standard way to ask \"How are you?\" in Russian.\n",
+            "latency": 2.6318581104278564,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 26,
+            "iteration": 4,
+            "response": "The translation of \"Good morning, how are you?\" into Russian is:\n\n**\"\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435, \u043a\u0430\u043a \u0443 \u0432\u0430\u0441?\"**\n",
+            "latency": 1.5201430320739746,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 46,
+            "iteration": 5,
+            "response": "The translation of \"Good morning, how are you?\" into Russian is:\n\n**\"\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435, \u043a\u0430\u043a \u0443 \u0432\u0430\u0441 \u0434\u0435\u043b\u0430?\"**\n\nThis is the most common and direct way to ask \"How are you?\" in Russian.\n",
+            "latency": 2.630764961242676,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 25,
+            "iteration": 6,
+            "response": "The translation of \"Good morning, how are you?\" into Russian is:\n\n**\"\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\"**\n",
+            "latency": 1.4390308856964111,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 26,
+            "iteration": 7,
+            "response": "The translation of \"Good morning, how are you?\" into Russian is:\n\n**\u0414\u043e\u0431\u0440\u044b\u0439 \u0434\u0435\u043d\u044c, \u043a\u0430\u043a \u0443 \u0432\u0430\u0441?**\n",
+            "latency": 1.4925260543823242,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 26,
+            "iteration": 8,
+            "response": "The translation of \"Good morning, how are you?\" into Russian is:\n\n**\"\u0414\u043e\u0431\u0440\u044b\u0439 \u0434\u0435\u043d\u044c, \u043a\u0430\u043a \u0432\u044b?\"**\n",
+            "latency": 1.5378952026367188,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 26,
+            "iteration": 9,
+            "response": "The translation of \"Good morning, how are you?\" into Russian is:\n\n**\"\u0414\u043e\u0431\u0440\u044b\u0439 \u0434\u0435\u043d\u044c, \u043a\u0430\u043a \u0442\u044b?\"**\n",
+            "latency": 1.5371108055114746,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 26,
+            "iteration": 10,
+            "response": "The translation of \"Good morning, how are you?\" into Russian is:\n\n**\"\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435, \u043a\u0430\u043a \u0443 \u0432\u0430\u0441?\"**\n",
+            "latency": 1.4846367835998535,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\"",
+            "prompt_len": 20,
+            "response_len": 26,
+            "iteration": 1,
+            "response": "The translation of \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\" into English is:\n\n**Good morning, how are you?**\n",
+            "latency": 1.5115902423858643,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\"",
+            "prompt_len": 20,
+            "response_len": 24,
+            "iteration": 2,
+            "response": "The translation of \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\" is:\n\n**Good morning, how are you?**\n",
+            "latency": 1.395799160003662,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\"",
+            "prompt_len": 20,
+            "response_len": 25,
+            "iteration": 3,
+            "response": "The translation of \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\" into English is:\n\n\"Good morning, how are you?\"\n",
+            "latency": 1.4142699241638184,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\"",
+            "prompt_len": 20,
+            "response_len": 23,
+            "iteration": 4,
+            "response": "The translation of \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\" is:\n\n\"Good morning, how are you?\"\n",
+            "latency": 1.323894739151001,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\"",
+            "prompt_len": 20,
+            "response_len": 23,
+            "iteration": 5,
+            "response": "The translation of \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\" is:\n\n\"Good morning, how are you?\"\n",
+            "latency": 1.3256351947784424,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\"",
+            "prompt_len": 20,
+            "response_len": 25,
+            "iteration": 6,
+            "response": "The translation of \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\" into English is:\n\n\"Good morning, how are you?\"\n",
+            "latency": 1.393115758895874,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\"",
+            "prompt_len": 20,
+            "response_len": 25,
+            "iteration": 7,
+            "response": "The translation of \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\" is:\n\n**Good morning, how are you doing?**\n",
+            "latency": 1.4770400524139404,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\"",
+            "prompt_len": 20,
+            "response_len": 26,
+            "iteration": 8,
+            "response": "The translation of \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\" into English is:\n\n**Good morning, how are you?**\n",
+            "latency": 1.5110487937927246,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\"",
+            "prompt_len": 20,
+            "response_len": 23,
+            "iteration": 9,
+            "response": "The translation of \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\" is:\n\n\"Good morning, how are you?\"\n",
+            "latency": 1.2980830669403076,
+            "peak_memory": 0.5102982516406356
+        },
+        {
+            "prompt": "Translate the following into English: \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\"",
+            "prompt_len": 20,
+            "response_len": 24,
+            "iteration": 10,
+            "response": "The translation of \"\u0414\u043e\u0431\u0440\u043e\u0435 \u0443\u0442\u0440\u043e, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\" is:\n\n**Good morning, how are you?**\n",
+            "latency": 1.4183375835418701,
+            "peak_memory": 0.5102982516406356
+        }
+    ]
+}

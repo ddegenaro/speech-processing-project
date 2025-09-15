@@ -91,7 +91,6 @@ class MainGUI(tk.Tk):
 
     def __init__(self):
         tk.Tk.__init__(self)
-        # window
 
         self.version = '1.0'
 

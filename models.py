@@ -55,7 +55,7 @@ class ModelInterface:
             self.device = self.model.device.type
         elif choice in AVAILABLE_REMOTE_MODELS:
             client = InferenceClient(
-                provider='novita',
+                model=choice,
                 api_key=self.API_KEY
             )
             self.model = client
@@ -87,31 +87,41 @@ class ModelInterface:
 
         print(f'SYSTEM: Loaded {self.model_name} in {load_time:.2}s.\n\n> ', end='')
 
-        cpu_mem_usage = sum(
-            p.numel() * p.element_size() for p in self.model.model.cpu().parameters()
-        )
-        cpu_mem_usage /= gb
+        try:
+            cpu_mem_usage = sum(
+                p.numel() * p.element_size() for p in self.model.model.cpu().parameters()
+            )
+            cpu_mem_usage /= gb
+            print(f'SYSTEM: {self.model_name} occupies {cpu_mem_usage:.2} GB on CPU.\n\n> ', end='')
+        except:
+            cpu_mem_usage = -1.0
 
-        print(f'SYSTEM: {self.model_name} occupies {cpu_mem_usage:.2} GB on CPU.\n\n> ', end='')
+        try:
+            if self.device == 'mps':
+                self.model.model.to('mps')
+                gpu_mem_usage = torch.mps.current_allocated_memory()
+            elif self.device == 'cuda':
+                self.model.model.to('cuda')
+                gpu_mem_usage = torch.cuda.memory.memory_allocated()
+            else:
+                gpu_mem_usage = -1.0
+            if self.device in ('mps', 'cuda'):
+                gpu_mem_usage /= gb
+                print(f'SYSTEM: {self.model_name} occupies {gpu_mem_usage:.2} GB on GPU {self.device}.\n\n> ', end='')
+        except:
+            gpu_mem_usage = -1.0
 
-        if self.device == 'mps':
-            self.model.model.to('mps')
-            gpu_mem_usage = torch.mps.current_allocated_memory()
-        elif self.device == 'cuda':
-            self.model.model.to('cuda')
-            gpu_mem_usage = torch.cuda.memory.memory_allocated()
-        if self.device in ('mps', 'cuda'):
-            gpu_mem_usage /= gb
-            print(f'SYSTEM: {self.model_name} occupies {gpu_mem_usage:.2} GB on GPU {self.device}.\n\n> ', end='')
-
-        size_on_disk = os.path.getsize(
-            glob(os.path.join(
-                os.environ['HOME'], '.cache', 'huggingface', 'hub',
-                f'models--{self.model_name.replace('/', '--')}',
-                'snapshots', '*', 'model.safetensors'
-            ))[0]
-        ) / gb
-        print(f'SYSTEM: {self.model_name} occupies {size_on_disk:.2} GB on disk.\n\n> ', end='')
+        try:
+            size_on_disk = os.path.getsize(
+                glob(os.path.join(
+                    os.environ['HOME'], '.cache', 'huggingface', 'hub',
+                    f'models--{self.model_name.replace('/', '--')}',
+                    'snapshots', '*', 'model.safetensors'
+                ))[0]
+            ) / gb
+            print(f'SYSTEM: {self.model_name} occupies {size_on_disk:.2} GB on disk.\n\n> ', end='')
+        except:
+            size_on_disk = -1.0
 
         overall = {
             'model_name': self.model_name,
@@ -142,26 +152,34 @@ class ModelInterface:
                 response = self.call(prompt, clean=False)
                 latency = time() - start
 
-                if self.device == 'mps':
-                    peak_memory = torch.mps.current_allocated_memory() - gpu_mem_usage
-                elif self.device == 'cuda':
-                    peak_memory = torch.cuda.max_memory_allocated()
+                try:
+                    if self.device == 'mps':
+                        peak_memory = (torch.mps.current_allocated_memory() - gpu_mem_usage) / gb
+                    elif self.device == 'cuda':
+                        peak_memory = torch.cuda.max_memory_allocated() / gb
+                    else:
+                        peak_memory = -1.0
+                except:
+                    peak_memory = -1.0
 
-                prompt_len = len(self.model.tokenizer.tokenize(
-                    self.model.tokenizer.apply_chat_template(
-                        self.message_history,
-                        tokenize=False
-                    )
-                ))
-                response_len = len(self.model.tokenizer.tokenize(
-                    response
-                ))
+                try:
+                    prompt_len = len(self.model.tokenizer.tokenize(
+                        self.model.tokenizer.apply_chat_template(
+                            self.message_history[:-1],
+                            tokenize=False
+                        )
+                    ))
+                    response_len = len(self.model.tokenizer.tokenize(
+                        response
+                    ))
+                except:
+                    prompt_len, response_len = -1.0, -1.0
 
                 overall['results'].append({
                     'prompt': prompt,
                     'prompt_len': prompt_len,
                     'response_len': response_len,
-                    'iteration': i,
+                    'iteration': i+1,
                     'response': response,
                     'latency': latency,
                     'peak_memory': peak_memory
