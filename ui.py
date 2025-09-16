@@ -25,10 +25,10 @@ from models import (
     ModelInterface
 )
 
-if os.path.exists('secret.txt'):
-    API_KEY = open('secret.txt', 'r', encoding='utf-8').read().strip()
+if os.path.exists('hf_secret.txt'):
+    HF_API_KEY = open('hf_secret.txt', 'r', encoding='utf-8').read().strip()
 else:
-    API_KEY = None
+    HF_API_KEY = None
 
 def clear_chat_history():
     global app
@@ -200,18 +200,27 @@ class MainGUI(tk.Tk):
         self.send_button.pack(side=LEFT, padx=4)
         self.bind('<Return>', send_message)
 
-        global API_KEY
+        global HF_API_KEY
 
-        if API_KEY is None:
-            API_KEY = simpledialog.askstring(
+        if HF_API_KEY is None:
+            HF_API_KEY = simpledialog.askstring(
                 title="HuggingFace API Token",
                 prompt="Enter your HF API token below:"
-            )
-            with open('secret.txt', 'w+', encoding='utf-8') as f:
-                f.write(API_KEY)
+            ).strip()
+            with open('hf_secret.txt', 'w+', encoding='utf-8') as f:
+                f.write(HF_API_KEY)
 
-        login(API_KEY)
-        self.mi.API_KEY = API_KEY
+        login(HF_API_KEY)
+
+        if self.mi.CEREBRAS_API_KEY is None:
+            CEREBRAS_API_KEY = simpledialog.askstring(
+                title="Cerebras API Token",
+                prompt="Enter your Cerebras API token below:"
+            ).strip()
+            with open('cerebras_secret.txt', 'w+', encoding='utf-8') as f:
+                f.write(CEREBRAS_API_KEY)
+            self.mi.CEREBRAS_API_KEY = CEREBRAS_API_KEY
+
         
         print('> ', end='')
 

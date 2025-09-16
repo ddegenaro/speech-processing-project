@@ -2,11 +2,11 @@ import os
 import re
 import json
 from glob import glob
-from time import time
+from time import time, sleep
 
 import torch
 from transformers import pipeline, TextGenerationPipeline
-from huggingface_hub import InferenceClient
+from cerebras.cloud.sdk import Cerebras
 
 AVAILABLE_LOCAL_MODELS = sorted([
     "Qwen/Qwen2.5-0.5B-Instruct",
@@ -16,9 +16,9 @@ AVAILABLE_LOCAL_MODELS = sorted([
 ])
 
 AVAILABLE_REMOTE_MODELS = sorted([
-    "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
-    "mistralai/Mistral-7B-Instruct-v0.3",
-    "meta-llama/Llama-3.1-8B-Instruct"
+    "qwen-3-32b",
+    "llama3.1-8b",
+    "gpt-oss-120b"
 ])
 
 thinking = re.compile(r'<think>[\s\S]*</think>')
@@ -31,9 +31,14 @@ class ModelInterface:
         self.model_name = None
         self.message_history = []
         self.max_previous_messages = 50
-        self.API_KEY = None
+
+        if os.path.exists('cerebras_secret.txt'):
+            self.CEREBRAS_API_KEY = open('cerebras_secret.txt', 'r', encoding='utf-8').read().strip()
+        else:
+            self.CEREBRAS_API_KEY = None
         self.device = None
         self.num_iters = 10 # for eval
+        self.is_remote = None
 
     def clear_history(self):
         self.message_history = []
@@ -53,13 +58,14 @@ class ModelInterface:
 
             self.model = pipe
             self.device = self.model.device.type
+            self.is_remote = False
         elif choice in AVAILABLE_REMOTE_MODELS:
-            client = InferenceClient(
-                model=choice,
-                api_key=self.API_KEY
+            client = Cerebras(
+                api_key=self.CEREBRAS_API_KEY
             )
             self.model = client
             self.device = None
+            self.is_remote = True
 
         self.message_history = []
 
@@ -184,6 +190,9 @@ class ModelInterface:
                     'latency': latency,
                     'peak_memory': peak_memory
                 })
+
+                if self.is_remote:
+                    sleep(3)
 
         print('\n\n> SYSTEM: Done.\n\n> ', end='')
 

@@ -1,4 +1,6 @@
 __pycache__/
 secret.txt
+hf_secret.txt
+cerebras_secret.txt
 scratch.ipynb
 tempCodeRunnerFile.py

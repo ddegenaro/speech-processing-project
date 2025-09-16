@@ -36,6 +36,8 @@ python ui.py
 
 You will be asked to provide a HuggingFace API Token in order to access gated models. To do this, make an account at [https://huggingface.co/](https://huggingface.co/). Then, head to [https://huggingface.co/settings/tokens](https://huggingface.co/settings/tokens) and create a new "Read-only" token. Copy and paste the entire thing in the box shown in the UI. Avoid sharing this token with anyone.
 
+You will also be asked to provide a Cerebras API Token in order to access the Cerebras API (remote models). To do this, make an account at [https://cloud.cerebras.ai/?utm_source=inferencedocs](https://cloud.cerebras.ai/?utm_source=inferencedocs). Then, head to [https://cloud.cerebras.ai/platform/](https://cloud.cerebras.ai/platform/), navigate to "API keys" on the left-hand side, and copy and paste your "Default Key" here. Avoid sharing this token with anyone.
+
 ## Model selection
 
 Only 6 models (3 local, 3 using free API inference providers) have been tested. These are accessible from the menu bar at the top of the window/screen (depending on your OS).
@@ -76,5 +78,5 @@ Information included:
   - Length of generated response in tokens (not including prompt, -1.0 if not local)
   - Iteration (if executing each prompt several times)
   - Response generated
-  - Latency in seconds
+  - Latency in seconds (subtract 3 for remote due to `time.sleep` calls used to prevent rate limiting)
   - Estimated peak memory usage (GB, -1.0 if no GPU or not local)
