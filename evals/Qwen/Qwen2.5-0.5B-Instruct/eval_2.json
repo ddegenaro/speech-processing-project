@@ -1,0 +1,549 @@
+{
+    "model_name": "Qwen/Qwen2.5-0.5B-Instruct",
+    "load_time": 1.2241928577423096,
+    "cpu_mem_usage": 0.9202077388763428,
+    "gpu_mem_usage": 0.9202079772949219,
+    "size_on_disk": 0.920237809419632,
+    "results": [
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 31,
+            "response_len": 50,
+            "iteration": 1,
+            "response": "Sure! Here's a classic joke for you:\n\nWhy don't scientists trust atoms?\n\nBecause they make up everything.\n\nI hope that made you laugh! Let me know if you'd like me to create another one or have an interesting conversation about it.",
+            "latency": 3.552820920944214,
+            "peak_memory": 0.9311790457738489
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 31,
+            "response_len": 34,
+            "iteration": 2,
+            "response": "Sure! Here's a classic joke for you:\n\nWhy did the tomato turn red?\n\nBecause it saw the salad dressing!\n\nI hope that brings a smile to your face!",
+            "latency": 1.3895320892333984,
+            "peak_memory": 0.9311790457738489
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 31,
+            "response_len": 35,
+            "iteration": 3,
+            "response": "Sure! Here's a light-hearted joke for you:\nWhy did the tomato turn red?\nBecause it saw the salad dressing!\nI hope that makes your day a little brighter!",
+            "latency": 1.4076159000396729,
+            "peak_memory": 0.9311790457738489
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 31,
+            "response_len": 33,
+            "iteration": 4,
+            "response": "Sure! Here's a classic joke for you:\n\nWhy don't scientists trust atoms?\n\nBecause they make up everything.\n\nI hope that brings a smile to your face!",
+            "latency": 1.2848501205444336,
+            "peak_memory": 0.9311790457738489
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 31,
+            "response_len": 52,
+            "iteration": 5,
+            "response": "Sure! Here's a classic joke for you:\n\nWhy did the tomato turn red?\n\nBecause it saw the salad dressing!\n\nThis is one of my favorites and I hope you find it amusing too! Let me know if you'd like me to create another one.",
+            "latency": 2.0494980812072754,
+            "peak_memory": 0.9311790457738489
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 32,
+            "response_len": 67,
+            "iteration": 1,
+            "response": "As an AI language model, I don't have personal preferences or emotions like humans do. However, I can tell you that many people enjoy the vibrant colors of nature and art, such as blue, green, yellow, red, orange, and purple. These colors can evoke feelings of happiness, tranquility, and creativity in people.",
+            "latency": 3.224428653717041,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 32,
+            "response_len": 79,
+            "iteration": 2,
+            "response": "As an artificial intelligence language model, I don't have personal preferences or emotions like humans do. My primary function is to provide information and assist with tasks based on the data I was trained on. Therefore, I don't possess any personal preferences for colors in the same way that a human might. However, I can help you find out what people generally consider their favorite colors if you're interested!",
+            "latency": 3.398515224456787,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 32,
+            "response_len": 104,
+            "iteration": 3,
+            "response": "As an artificial intelligence language model, I don't have personal preferences or emotions like humans do. However, I can tell you that there are many people who love the color blue and consider it to be one of their favorite colors. The color blue is often associated with trustworthiness, stability, and calmness, which makes it a popular choice for different cultures around the world. It also has various meanings in different contexts, such as being associated with water, sky, or the sea, depending on the cultural context.",
+            "latency": 4.679675817489624,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 32,
+            "response_len": 63,
+            "iteration": 4,
+            "response": "As an AI language model created by Alibaba Cloud, I don't have personal preferences or emotions like humans do. However, I can tell you that many people find blue to be the most calming and soothing color, while others prefer red for its intensity and energy. Ultimately, it comes down to individual tastes and preferences!",
+            "latency": 4.313256025314331,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 32,
+            "response_len": 70,
+            "iteration": 5,
+            "response": "As an artificial intelligence language model, I don't have personal preferences or emotions like humans do. However, I can tell you that colors come in many hues and shades, so it's difficult for me to choose one as my \"favorite\" color. But if you're looking for something specific, I could suggest some popular colors that might interest you!",
+            "latency": 4.8658668994903564,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 33,
+            "response_len": 7,
+            "iteration": 1,
+            "response": "The capital of France is Paris.",
+            "latency": 0.7056629657745361,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 33,
+            "response_len": 7,
+            "iteration": 2,
+            "response": "The capital of France is Paris.",
+            "latency": 0.5910990238189697,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 33,
+            "response_len": 7,
+            "iteration": 3,
+            "response": "The capital of France is Paris.",
+            "latency": 0.5766301155090332,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 33,
+            "response_len": 7,
+            "iteration": 4,
+            "response": "The capital of France is Paris.",
+            "latency": 0.5459160804748535,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 33,
+            "response_len": 7,
+            "iteration": 5,
+            "response": "The capital of France is Paris.",
+            "latency": 0.5670938491821289,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 31,
+            "response_len": 256,
+            "iteration": 1,
+            "response": "Photosynthesis is the process by which plants and some other organisms use sunlight to convert carbon dioxide and water into glucose and oxygen. It's an important biological process that plays a crucial role in the cycling of nutrients on Earth.\n\nThe basic mechanism of photosynthesis can be summarized as follows:\n\n1. **Light Absorption**: The plant uses its chlorophyll pigments (chlorophyll a and b) to absorb light energy from the sun.\n\n2. **Chlorophyll Conduction**: The absorbed light energy is used to excite electrons within the chlorophyll molecules. These excited electrons then pass through a series of proteins called photosystems and transfer their energy to another protein called a Calvin cycle enzyme complex.\n\n3. **Carbon Fixation**: In the Calvin cycle, carbon dioxide from the air is fixed into organic compounds like glucose. This occurs through a series of enzymatic reactions where carbon dioxide is converted into three-carbon sugars, and the resulting sugar is then used for energy production.\n\n4. **Energy Conversion**: The final product of this process is ATP (adenosine triphosphate), which is used to power the entire process. This ATP is also used for other chemical reactions throughout the plant.\n\n5. **Water Separation**: Some of the energy produced during photos",
+            "latency": 17.367186784744263,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 31,
+            "response_len": 256,
+            "iteration": 2,
+            "response": "Photosynthesis is the process by which plants and other organisms use sunlight energy to convert carbon dioxide and water into glucose (a type of sugar) and oxygen. This process occurs in their leaves where chlorophyll, a green pigment found in plant cells, captures light energy from the sun.\n\nThe overall equation for photosynthesis can be written as:\n\n6CO2 + 6H2O + light energy → C6H12O6 (glucose) + 6O2\n\nIn this reaction:\n- Carbon dioxide (CO2) and water (H2O) are absorbed by the plant.\n- The light energy is captured by the chlorophyll molecules in the chloroplasts.\n- Oxygen (O2) is released as a byproduct.\n\nThe key features of photosynthesis include:\n\n1. Light-dependent reactions: These take place in the thylakoid membranes of chloroplasts. They involve the splitting of water molecules to release hydrogen ions (H+) and electrons. Chlorophyll absorbs light at specific wavelengths, causing these electrons to become excited and transfer them to an electron transport chain within the chlorophyll molecules.\n\n2. Electron transport chain: Electrons are transferred along a series of protein chains called the electron transport chain. As they pass through the",
+            "latency": 10.448517084121704,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 31,
+            "response_len": 256,
+            "iteration": 3,
+            "response": "Photosynthesis is the process by which plants and other organisms use sunlight to convert carbon dioxide and water into glucose and oxygen. It's an essential part of life on Earth, as it provides food for all living things and helps regulate the atmosphere.\n\nThe basic process of photosynthesis can be broken down into several key steps:\n\n1. **Light Absorption**: Chlorophyll in the leaves absorbs light energy from the sun.\n2. **Water Splitting**: Water molecules are split into hydrogen and oxygen atoms through a process called photolysis. This releases oxygen as a byproduct.\n3. **Carbon Dioxide Fixation**: Carbon dioxide molecules are absorbed by tiny structures inside the leaf known as chloroplasts.\n4. **Glucose Synthesis**: Using the energy released from splitting water, sugars (glucose) are produced through a series of chemical reactions.\n5. **Oxygen Release**: Oxygen is released as a byproduct of this process.\n\nThis cycle occurs in the presence of light and water, with the plant taking advantage of these resources to produce their own food. Photosynthesis is crucial because it directly supports human activities such as agriculture, manufacturing, and industrial processes that rely on renewable sources of energy like solar and wind power.\n\nIn summary, photosynthesis allows plants to grow,",
+            "latency": 17.319660186767578,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 31,
+            "response_len": 256,
+            "iteration": 4,
+            "response": "Photosynthesis is the process by which plants and some other organisms convert light energy from the sun into chemical energy stored in glucose (a type of sugar). It occurs in chloroplasts within plant cells, where sunlight, water, carbon dioxide, and nutrients like nitrogen, phosphorus, and potassium are used to produce oxygen and glucose.\n\nHere's an explanation of photosynthesis:\n\n1. **Light Absorption**: The primary step involves capturing light energy through pigments called chlorophyll. Chlorophyll absorbs light at specific wavelengths that allow it to be absorbed efficiently by the pigment molecules.\n\n2. **Energy Conversion**: When light energy is captured, it excites electrons in the chlorophyll molecules. This excited state can then be converted back into usable forms of energy for the cell.\n\n3. **Carbon Dioxide Fixation**: Plants absorb carbon dioxide from the air using their leaves as a diffusion mechanism. Carbon dioxide is fixed into organic compounds such as sugars.\n\n4. **Glucose Production**: These sugars can be used directly by the plant or converted into other forms of energy through cellular respiration.\n\n5. **Water Absorption**: Water is absorbed through specialized structures on the leaf surface, often arranged in a spiral pattern known as the trichocytic system.\n\n6. **O",
+            "latency": 17.425550937652588,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 31,
+            "response_len": 256,
+            "iteration": 5,
+            "response": "Photosynthesis is the process by which plants use sunlight to convert carbon dioxide and water into glucose (a type of sugar) and oxygen. This process is essential for most life on Earth as it provides energy for almost all living organisms.\n\nHere's a breakdown of how photosynthesis works:\n\n1. Light Absorption: The plant takes in light through its leaves, primarily using chlorophyll pigments that absorb red and blue wavelengths of light.\n\n2. Chloroplasts Activation: In these chloroplasts, the absorbed light energy is converted into chemical energy stored in molecules like ATP (adenosine triphosphate) and NADPH (nicotinamide adenine dinucleotide phosphate).\n\n3. Glucose Production: Using the energy from the light absorption, carbon dioxide and water (H₂O) are broken down to form glucose and oxygen. The reaction can be represented as:\n   CO₂ + H₂O + Light → C₆H₁₂O₆ + Energy\n\n4. Oxygen Release: The glucose produced contains some of the energy used during the light-absorbing stage, which is released as oxygen (O₂). This oxygen serves as a byproduct of the process and is released back into the atmosphere.\n\n5. Carbon Dioxide Removal: While",
+            "latency": 17.563334941864014,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 40,
+            "response_len": 6,
+            "iteration": 1,
+            "response": "早上好，你怎么样？",
+            "latency": 0.41959691047668457,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 40,
+            "response_len": 6,
+            "iteration": 2,
+            "response": "早上好，你怎么样？",
+            "latency": 0.25119519233703613,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 40,
+            "response_len": 6,
+            "iteration": 3,
+            "response": "早上好，你怎么样？",
+            "latency": 0.24473190307617188,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 40,
+            "response_len": 6,
+            "iteration": 4,
+            "response": "早上好，你好吗？",
+            "latency": 0.25146913528442383,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 40,
+            "response_len": 6,
+            "iteration": 5,
+            "response": "早上好，你怎么样？",
+            "latency": 0.24817323684692383,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"早上好，你好吗？\"",
+            "prompt_len": 40,
+            "response_len": 8,
+            "iteration": 1,
+            "response": "\"Good morning, how are you?\"",
+            "latency": 0.3581869602203369,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"早上好，你好吗？\"",
+            "prompt_len": 40,
+            "response_len": 7,
+            "iteration": 2,
+            "response": "Good morning, how are you?",
+            "latency": 0.30518198013305664,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"早上好，你好吗？\"",
+            "prompt_len": 40,
+            "response_len": 8,
+            "iteration": 3,
+            "response": "\"Good morning, how are you?\"",
+            "latency": 0.31932997703552246,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"早上好，你好吗？\"",
+            "prompt_len": 40,
+            "response_len": 7,
+            "iteration": 4,
+            "response": "Good morning, how are you?",
+            "latency": 0.2820930480957031,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"早上好，你好吗？\"",
+            "prompt_len": 40,
+            "response_len": 7,
+            "iteration": 5,
+            "response": "Good morning, how are you?",
+            "latency": 0.28002095222473145,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 44,
+            "response_len": 11,
+            "iteration": 1,
+            "response": "\"线粒体是细胞的主宰力量。\"",
+            "latency": 0.6560890674591064,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 44,
+            "response_len": 10,
+            "iteration": 2,
+            "response": "\"线粒体是细胞的发动机。\"",
+            "latency": 0.42702507972717285,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 44,
+            "response_len": 13,
+            "iteration": 3,
+            "response": "\"细胞的线粒体是细胞的强大动力源。\"",
+            "latency": 0.4979257583618164,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 44,
+            "response_len": 12,
+            "iteration": 4,
+            "response": "\"细胞的线粒体是细胞的强大动力。\"",
+            "latency": 0.6638660430908203,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 44,
+            "response_len": 13,
+            "iteration": 5,
+            "response": "\"细胞的线粒体是细胞的强大动力源。\"",
+            "latency": 0.5350339412689209,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"线粒体是细胞的动力源。\"",
+            "prompt_len": 42,
+            "response_len": 123,
+            "iteration": 1,
+            "response": "The phrase \"线粒体是细胞的动力源。\" can be translated to English as:\n\n\"The mitochondria serve as the power source of the cell.\"\n\nThis sentence emphasizes that mitochondria play a crucial role in maintaining cellular energy production and function within cells. They are responsible for converting nutrients from food into energy through a process called respiration, which is essential for the survival and growth of organisms. The mitochondria also produce reactive oxygen species (ROS), which are harmful molecules that damage cellular components if not properly managed.\n\nUnderstanding the importance of mitochondria helps in appreciating their critical roles in cellular metabolism and overall health.",
+            "latency": 5.878043174743652,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"线粒体是细胞的动力源。\"",
+            "prompt_len": 42,
+            "response_len": 11,
+            "iteration": 2,
+            "response": "\"The mitochondria are the powerhouses of the cell.\"",
+            "latency": 0.5051209926605225,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"线粒体是细胞的动力源。\"",
+            "prompt_len": 42,
+            "response_len": 256,
+            "iteration": 3,
+            "response": "The phrase \"线粒体是细胞的动力源。\" can be translated to English as:\n\n\"The mitochondria are the powerhouses of the cell.\"\n\nThis statement encapsulates the fundamental role that mitochondria play in cellular metabolism and energy production within living organisms. Mitochondria are crucial organelles found in all eukaryotic cells, including plant and animal cells. They are responsible for producing energy through a process called oxidative phosphorylation, which occurs in the inner mitochondrial membrane.\n\nMitochondria are characterized by their unique structure, containing a double membrane with an outer membrane (the cristae) and an inner membrane (the matrix). The inner membrane contains enzymes involved in various metabolic processes, while the outer membrane is permeable, allowing for the entry of substances such as glucose, fatty acids, and oxygen into the mitochondria.\n\nIn this context, the word \"powerhouses\" refers to the ability of mitochondria to produce high levels of ATP (adenosine triphosphate), the primary energy currency of cells. This capability allows cells to generate sufficient energy for various physiological functions and maintain life activities.\n\nUnderstanding the importance of mitochondria in the cell's energy production has significant implications for health sciences, biochemistry, and the field of medicine, particularly in the areas of cancer treatment",
+            "latency": 13.021799802780151,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"线粒体是细胞的动力源。\"",
+            "prompt_len": 42,
+            "response_len": 43,
+            "iteration": 4,
+            "response": "The word \"线粒体\" in English is translated as \"mitochondrion\". The sentence \"线粒体是细胞的动力源\" translates to \"Mitochondria are the powerhouses of the cell.\"",
+            "latency": 3.0361878871917725,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"线粒体是细胞的动力源。\"",
+            "prompt_len": 42,
+            "response_len": 203,
+            "iteration": 5,
+            "response": "The word \"线粒体\" in Chinese means \"mitochondrion\". It is indeed an essential component of cells and plays a crucial role in their functions.\n\nIn biology and cell physiology, mitochondria are specialized organelles found within eukaryotic cells that are responsible for generating energy through cellular respiration. They contain various enzymes, such as ATP synthase, which catalyze the synthesis of adenosine triphosphate (ATP), a molecule used as the primary energy currency in living organisms.\n\nMitochondria are also involved in the process of aerobic respiration, where they produce ATP from glucose via the Krebs cycle and oxidative phosphorylation. This process allows cells to convert nutrients into usable forms of energy without relying on external sources like sunlight or oxygen.\n\nThe function of mitochondria is fundamental to life processes throughout the body, including growth, development, repair, and metabolism. Without them, many vital biological functions would not be possible, making mitochondria a critical component of all living organisms.",
+            "latency": 14.00205683708191,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 40,
+            "response_len": 13,
+            "iteration": 1,
+            "response": "Здравствуйте, как вы делаете?",
+            "latency": 1.003166913986206,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 40,
+            "response_len": 12,
+            "iteration": 2,
+            "response": "Здравствуйте, сколько вам сегодня?",
+            "latency": 0.8919720649719238,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 40,
+            "response_len": 7,
+            "iteration": 3,
+            "response": "Привет, как дела?",
+            "latency": 0.5756790637969971,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 40,
+            "response_len": 10,
+            "iteration": 4,
+            "response": "Приветствую вас, как вы?",
+            "latency": 0.724067211151123,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 40,
+            "response_len": 41,
+            "iteration": 5,
+            "response": "Воспоминания о папке и папку, которую я запрашиваю у вас. Это очень важный момент в вашей жизни. Какая у вас сегодня?",
+            "latency": 2.809248924255371,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"Доброе утро, как дела?\"",
+            "prompt_len": 42,
+            "response_len": 8,
+            "iteration": 1,
+            "response": "Hello morning, how do you do?",
+            "latency": 0.6636629104614258,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"Доброе утро, как дела?\"",
+            "prompt_len": 42,
+            "response_len": 8,
+            "iteration": 2,
+            "response": "\"Good morning, how are you?\"",
+            "latency": 0.6197948455810547,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"Доброе утро, как дела?\"",
+            "prompt_len": 42,
+            "response_len": 6,
+            "iteration": 3,
+            "response": "Hello, how are you?",
+            "latency": 0.48064732551574707,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"Доброе утро, как дела?\"",
+            "prompt_len": 42,
+            "response_len": 8,
+            "iteration": 4,
+            "response": "\"Good morning, how are you?\"",
+            "latency": 0.6148309707641602,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"Доброе утро, как дела?\"",
+            "prompt_len": 42,
+            "response_len": 8,
+            "iteration": 5,
+            "response": "\"Good morning, how are you?\"",
+            "latency": 0.6339960098266602,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Russian: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 44,
+            "response_len": 16,
+            "iteration": 1,
+            "response": "\"Митохондроз - это основа клетки.\"",
+            "latency": 1.2136681079864502,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Russian: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 44,
+            "response_len": 14,
+            "iteration": 2,
+            "response": "Термионат — основной силой клетки.",
+            "latency": 1.0585217475891113,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Russian: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 44,
+            "response_len": 21,
+            "iteration": 3,
+            "response": "Митохондриум является основным источником энергии в клетке.",
+            "latency": 1.53239107131958,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Russian: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 44,
+            "response_len": 17,
+            "iteration": 4,
+            "response": "Митоксион - это главный источник энергии клетки.",
+            "latency": 1.2904138565063477,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into Russian: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 44,
+            "response_len": 16,
+            "iteration": 5,
+            "response": "Терминомитрона — основная мощь клетки.",
+            "latency": 1.2108020782470703,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"Митохондрия — это электростанция клетки.\"",
+            "prompt_len": 51,
+            "response_len": 15,
+            "iteration": 1,
+            "response": "\"Mitohondriya is an electric power plant for cell membranes.\"",
+            "latency": 1.1417250633239746,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"Митохондрия — это электростанция клетки.\"",
+            "prompt_len": 51,
+            "response_len": 157,
+            "iteration": 2,
+            "response": "The English translation of \"Митохондрия — это электростанция клетки\" is:\n\n\"Mitochoria is an electric power station in cells.\"\n\nThis sentence translates to English while maintaining the original meaning and structure:\n- \"Митохондрия\" means \"Mitochoria\"\n- \"электростанция\" means \"electric power station\"\n- \"клетки\" means \"cells\"\n\nIn biology or electrical engineering contexts, \"mitochnidia\" typically refer to small biological devices used for energy production within living cells. These can be found in various organisms including bacteria, yeast, and some plants. The term \"mitochondria\" itself refers to these specific types of cells that contain this type of cellular powerhouse.",
+            "latency": 7.5054919719696045,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"Митохондрия — это электростанция клетки.\"",
+            "prompt_len": 51,
+            "response_len": 14,
+            "iteration": 3,
+            "response": "\"Mitohonodrina is an electric power plant of cellular membranes.\"",
+            "latency": 0.6896531581878662,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"Митохондрия — это электростанция клетки.\"",
+            "prompt_len": 51,
+            "response_len": 54,
+            "iteration": 4,
+            "response": "\"Mitoхондрия\" translates to \"Mitochondria,\" which is the term for the cell organelles responsible for producing energy in living organisms.\n\nSo, \"Mitoхондрия\" can be translated as:\n\n\"Mitochondria\"",
+            "latency": 2.1610569953918457,
+            "peak_memory": 0.930589913464889
+        },
+        {
+            "prompt": "Translate the following into English: \"Митохондрия — это электростанция клетки.\"",
+            "prompt_len": 51,
+            "response_len": 13,
+            "iteration": 5,
+            "response": "\"Mitohondo is an electrical power plant for cell membranes.\"",
+            "latency": 0.6127908229827881,
+            "peak_memory": 0.930589913464889
+        }
+    ]
+}

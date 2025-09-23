@@ -12,7 +12,6 @@ AVAILABLE_LOCAL_MODELS = sorted([
     "Qwen/Qwen2.5-0.5B-Instruct",
     "google/gemma-3-270m-it",
     "meta-llama/Llama-3.2-1B-Instruct"
-
 ])
 
 AVAILABLE_REMOTE_MODELS = sorted([
@@ -37,7 +36,7 @@ class ModelInterface:
         else:
             self.CEREBRAS_API_KEY = None
         self.device = None
-        self.num_iters = 10 # for eval
+        self.num_iters = 5 # for eval
         self.is_remote = None
 
     def clear_history(self):
@@ -192,7 +191,7 @@ class ModelInterface:
                 })
 
                 if self.is_remote:
-                    sleep(3)
+                    sleep(10)
 
         print('\n\n> SYSTEM: Done.\n\n> ', end='')
 

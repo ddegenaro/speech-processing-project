@@ -1,0 +1,549 @@
+{
+    "model_name": "meta-llama/Llama-3.2-1B-Instruct",
+    "load_time": 4.879974126815796,
+    "cpu_mem_usage": 2.3018836975097656,
+    "gpu_mem_usage": 2.5154764652252197,
+    "size_on_disk": 2.3018993511795998,
+    "results": [
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 36,
+            "response_len": 53,
+            "iteration": 1,
+            "response": "A man walked into a library and asked the librarian, \"Do you have any books on Pavlov's dogs and Schrödinger's cat?\"\n\nThe librarian replied, \"It rings a bell, but I'm not sure if it's here or not.\"",
+            "latency": 3.437613010406494,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 36,
+            "response_len": 54,
+            "iteration": 2,
+            "response": "A man walked into a library and asked the librarian, \"Do you have any books on Pavlov's dogs and Schrödinger's cat?\" \n\nThe librarian replied, \"It rings a bell, but I'm not sure if it's here or not.\"",
+            "latency": 2.6078410148620605,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 36,
+            "response_len": 53,
+            "iteration": 3,
+            "response": "A man walked into a library and asked the librarian, \"Do you have any books on Pavlov's dogs and Schrödinger's cat?\"\n\nThe librarian replied, \"It rings a bell, but I'm not sure if it's here or not.\"",
+            "latency": 2.5253729820251465,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 36,
+            "response_len": 31,
+            "iteration": 4,
+            "response": "A man walked into a library and asked the librarian, \"Do you have any books on Pavlov's dogs and Schrödinger's cat?\"",
+            "latency": 1.5326290130615234,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 36,
+            "response_len": 31,
+            "iteration": 5,
+            "response": "A man walked into a library and asked the librarian, \"Do you have any books on Pavlov's dogs and Schrödinger's cat?\"",
+            "latency": 1.5834500789642334,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 37,
+            "response_len": 53,
+            "iteration": 1,
+            "response": "I'm simply a language model, I don't have personal preferences, including favorite colors. However, I can provide information about colors, color theory, and even help with color-related tasks if you'd like. What would you like to know or discuss about colors?",
+            "latency": 3.192081928253174,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 37,
+            "response_len": 60,
+            "iteration": 2,
+            "response": "I'm simply a language model, I don't have have personal preferences, including favorite colors. However, I can tell you about different colors, provide information about color theory, or help you generate color palettes if you're looking for inspiration. What would you like to know or discuss about colors?",
+            "latency": 3.0875751972198486,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 37,
+            "response_len": 56,
+            "iteration": 3,
+            "response": "I'm simply a language model, I don't have have personal preferences, including favorite colors. However, I can tell you about different colors, provide color-related information, or help with color-related tasks if you'd like. What would you like to know or discuss about colors?",
+            "latency": 2.7981319427490234,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 37,
+            "response_len": 56,
+            "iteration": 4,
+            "response": "I'm simply a language model, I don't have have personal preferences, including favorite colors. However, I can tell you about different colors, provide color-related information, or help with color-related tasks if you'd like. What would you like to know or discuss about colors?",
+            "latency": 3.5206689834594727,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 37,
+            "response_len": 47,
+            "iteration": 5,
+            "response": "I'm just a language model, I don't have have personal preferences, including favorite colors. However, I can tell you about different colors, their meanings, and how they're used in various cultures and designs if you're interested!",
+            "latency": 3.6488149166107178,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 38,
+            "response_len": 7,
+            "iteration": 1,
+            "response": "The capital of France is Paris.",
+            "latency": 1.0112318992614746,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 38,
+            "response_len": 7,
+            "iteration": 2,
+            "response": "The capital of France is Paris.",
+            "latency": 0.77243971824646,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 38,
+            "response_len": 7,
+            "iteration": 3,
+            "response": "The capital of France is Paris.",
+            "latency": 0.7039878368377686,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 38,
+            "response_len": 7,
+            "iteration": 4,
+            "response": "The capital of France is Paris.",
+            "latency": 0.655534029006958,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 38,
+            "response_len": 7,
+            "iteration": 5,
+            "response": "The capital of France is Paris.",
+            "latency": 0.5968179702758789,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 36,
+            "response_len": 256,
+            "iteration": 1,
+            "response": "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy from the sun into chemical energy in the form of glucose, a type of sugar. This process is essential for life on Earth, as it provides energy and organic compounds for plants to grow and thrive.\n\nThe basic equation for photosynthesis is:\n\n6 CO2 (carbon dioxide) + 6 H2O (water) + light energy → C6H12O6 (glucose) + 6 O2 (oxygen)\n\nHere's a step-by-step explanation of the process:\n\n1. **Light absorption**: Light energy from the sun is absorbed by pigments such as chlorophyll in plant cells.\n2. **Water absorption**: Water is absorbed by the plant through its roots.\n3. **Carbon dioxide absorption**: Carbon dioxide is absorbed from the air through small openings on the plant's leaves called stomata.\n4. **Light-dependent reactions**: The light energy is used to power a series of chemical reactions that convert carbon dioxide and water into glucose and oxygen.\n5. **Calvin cycle**: The glucose produced in the light-dependent reactions is used to produce ATP (adenosine triphosphate) and NADPH (nicotinamide adenine dinucleotide phosphate).",
+            "latency": 26.4368257522583,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 36,
+            "response_len": 256,
+            "iteration": 2,
+            "response": "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy from the sun into chemical energy in the form of glucose, a type of sugar. This process is essential for life on Earth as it provides the energy and organic compounds needed to support the food chain.\n\nHere's a simplified explanation of the photosynthesis process:\n\n**Step 1: Light absorption**\nLight energy from the sun is absorbed by pigments such as chlorophyll in plant cells. Chlorophyll is a green pigment that plays a crucial role in photosynthesis.\n\n**Step 2: Water absorption**\nWater is absorbed by the plant roots and transported to the leaves through the xylem.\n\n**Step 3: Carbon dioxide absorption**\nCarbon dioxide is absorbed by the leaves from the atmosphere through small openings called stomata.\n\n**Step 4: Light-dependent reactions**\nThe energy from light is used to convert water and carbon dioxide into a molecule called ATP (adenosine triphosphate), which is the energy currency of the cell.\n\n**Step 5: Light-independent reactions (Calvin cycle)**\nThe ATP and NADPH produced in the light-dependent reactions are used to convert carbon dioxide into glucose. This process is called the Calvin cycle. It involves a series of enzyme-c",
+            "latency": 20.172126054763794,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 36,
+            "response_len": 256,
+            "iteration": 3,
+            "response": "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy from the sun into chemical energy in the form of glucose, a type of sugar. This process is essential for life on Earth, as it provides the energy and organic compounds needed to support the food chain.\n\nHere's a simplified explanation of the photosynthesis process:\n\n**The Steps of Photosynthesis:**\n\n1. **Light Absorption**: Chlorophyll, a green pigment found in plants, absorbs light energy from the sun. This energy is then transferred to a molecule called ATP (adenosine triphosphate), which is the energy currency of the cell.\n2. **Water Absorption**: Plants absorb water from the soil through their roots.\n3. **Carbon Dioxide Absorption**: Plants absorb carbon dioxide from the atmosphere through tiny openings on their leaves called stomata.\n4. **Light-Dependent Reactions**: The absorbed light energy is used to convert water and carbon dioxide into a molecule called ATP and NADPH (nicotinamide adenine dinucleotide phosphate).\n5. **Calvin Cycle**: The ATP and NADPH produced in the light-dependent reactions are used to convert carbon dioxide into glucose through a series of reactions called the Calvin cycle.\n6. **Gl",
+            "latency": 19.994168043136597,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 36,
+            "response_len": 256,
+            "iteration": 4,
+            "response": "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy from the sun into chemical energy in the form of glucose, a type of sugar. This process is essential for life on Earth, as it provides energy and organic compounds for the food chain.\n\nHere's a simplified overview of the photosynthesis process:\n\n**Step 1: Light Absorption**\nLight energy from the sun is absorbed by pigments such as chlorophyll in plant cells. Chlorophyll absorbs blue and red light, but reflects green light, which is why plants appear green.\n\n**Step 2: Water Absorption**\nWater (H2O) is absorbed by the roots of the plant from the soil.\n\n**Step 3: Carbon Dioxide Absorption**\nCarbon dioxide (CO2) is absorbed from the atmosphere through small openings on the leaves called stomata.\n\n**Step 4: Light-Dependent Reactions**\nThe energy from light is used to convert water and carbon dioxide into glucose and oxygen through a series of chemical reactions. These reactions are called the light-dependent reactions.\n\n**Step 5: Light-Independent Reactions (Calvin Cycle)**\nThe energy from light is used to convert carbon dioxide and water into glucose and oxygen through a series of chemical reactions",
+            "latency": 19.70163321495056,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 36,
+            "response_len": 256,
+            "iteration": 5,
+            "response": "Photosynthesis is a fascinating process that occurs in plants, algae, and some bacteria. It's the primary method by which these organisms produce their food, and it's essential for life on Earth.\n\nHere's a simplified explanation of photosynthesis:\n\n**What is photosynthesis?**\n\nPhotosynthesis is the process by which plants, algae, and some bacteria convert light energy from the sun into chemical energy in the form of glucose (a type of sugar). This process occurs in specialized organelles called chloroplasts, which are present in plant cells.\n\n**The equation:**\n\n6 CO2 (carbon dioxide) + 6 H2O (water) + light energy → C6H12O6 (glucose) + 6 O2 (oxygen)\n\n**The steps:**\n\n1. **Light absorption**: Chlorophyll, a green pigment, absorbs light energy from the sun.\n2. **Water absorption**: Water is absorbed by the plant through its roots.\n3. **Carbon dioxide absorption**: Carbon dioxide is absorbed by the plant through its leaves.\n4. **Calvin cycle**: The plant uses the energy from light to convert CO2 and water into glucose and oxygen.\n5. **Glucose production**: Glucose is produced as a result of the Calvin cycle",
+            "latency": 20.793843746185303,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 45,
+            "response_len": 97,
+            "iteration": 1,
+            "response": "Here's a possible translation:\n\n\"Good morning, how are you?\"\n\nIn Chinese, this would be:\n\n\"早上好，怎么样?\"\n\nHere's a breakdown of the translation:\n\n* \"早上\" means \"good morning\"\n* \"好\" means \"good\" or \"well\"\n* \"怎么样\" means \"how are you?\"\n\nSo, the entire phrase \"早上好，怎么样?\" is a common way to greet someone and ask how they're doing.",
+            "latency": 5.428016185760498,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 45,
+            "response_len": 14,
+            "iteration": 2,
+            "response": "Here's the translation:\n\n\"早上好， how are you?\"",
+            "latency": 0.7510688304901123,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 45,
+            "response_len": 194,
+            "iteration": 3,
+            "response": "Here's a translation of \"Good morning, how are you?\" into Chinese:\n\n\"上午好，如何?\" (Chū shàng hǎo, hái le?)\n\nHere's a breakdown of the translation:\n\n* \"\" (Chū shàng hǎo) means \"good morning\"\n* \"\" (hǎo) is a polite way to say \"how are you\"\n* \"\" (hāi le) means \"how\" and \"\" (le) is a polite way to ask for information\n\nAlternatively, you can also use \"\" (shàng shàng) which is a more informal way to ask \"how are you\", but \"\" (hǎo) is a more polite way to ask.\n\nSo the full translation is:\n\n\"上午好，什麼了?\" (Chū shàng hǎo, shénme le?)\n\nThis is a polite way to ask \"what's going on\" or \"how is everything going\".",
+            "latency": 9.699310064315796,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 45,
+            "response_len": 256,
+            "iteration": 4,
+            "response": "Here's the translation:\n\n\"สวัสดีค่ะ/ครับ สวัสดีค่ะ/ครับ คุณรู้ไหมว่าเวลาเที่ยงค่ะ/ครับ คุณรู้ไหมว่าเวลาเย็นค่ะ/ครับ คุณรู้ไหมว่าเวลาเย็นค่ะ/ครับ คุณรู้ไหมว่าเวลาเย็นค่ะ/ครับ คุณรู้ไหมว่าเวลาเย็นค่ะ/ครับ คุณรู้ไหมว่าเวลาเย็นค่ะ/ครับ คุณรู้ไหมว่าเวลาเย็นค่ะ/ครับ คุณรู้ไหมว่าเวลาเย็นค่ะ/ครับ คุณรู้ไหมว่าเวลาเย็นค่ะ/ครับ คุณรู้ไหมว่าเวลาเย็นค่ะ/ครับ คุณรู้ไหมว่าเวลาเย็นค่ะ/ครับ คุณรู้ไหมว่าเวลาเย็นค่ะ/ครับ คุณรู้ไหมว่าเวลาเย็นค่ะ/ครับ คุณรู้ไหมว่าเวลาเย็นค่ะ/ครับ คุณรู้ไหมว่าเวลาเย",
+            "latency": 17.949731826782227,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 45,
+            "response_len": 60,
+            "iteration": 5,
+            "response": "Here's the translation:\n\n\"Good morning, how are you?\"\n\nIn Chinese, this would be:\n\n\"早上好，天气如何?\"\n\nHere's a breakdown of the translation:\n\n- \"早上好\" means \"good morning\"\n- \"天气如何\" means \"how are you?\"",
+            "latency": 4.9422242641448975,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"早上好，你好吗？\"",
+            "prompt_len": 46,
+            "response_len": 121,
+            "iteration": 1,
+            "response": "The translation of \"早上好，你好吗？\" into English is:\n\n\"Good morning, how are you?\"\n\nHere's a breakdown of the translation:\n\n* \"早上\" means \"good morning\"\n* \"好\" means \"good\" or \"well\"\n* \"你\" is a polite term used to address someone\n* \"好吗\" is a question that means \"how are you?\"\n* \"?\" is a question mark, which indicates the end of the sentence\n\nSo, the full phrase \"早上好，你好吗？\" literally means \"Good morning, how are you?\"",
+            "latency": 7.5685203075408936,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"早上好，你好吗？\"",
+            "prompt_len": 46,
+            "response_len": 105,
+            "iteration": 2,
+            "response": "The translation of \"早上好，你好吗？\" into English is:\n\n\"Good morning, how are you?\"\n\nHere's a breakdown of the translation:\n\n* \"早上\" (gāo shàng) means \"good morning\"\n* \"好\" (hǎo) means \"good\"\n* \"你\" (nǐ) is a polite first-person singular pronoun, equivalent to \"you\"\n* \"好吗?\" (hǎo ma) is a question form of \"how are you?\"",
+            "latency": 5.295259237289429,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"早上好，你好吗？\"",
+            "prompt_len": 46,
+            "response_len": 120,
+            "iteration": 3,
+            "response": "The translation of \"早上好，你好吗？\" into English is:\n\n\"Good morning, how are you?\"\n\n* \"早上好\" (Gaku shite, aru shite) is a polite way to greet someone in the morning.\n* \"你好\" (nyougo) means \"good morning\" or \"good day\".\n* \"吗\" (mā) is a question mark, used to ask a question.\n\nSo, the full sentence is asking if the person is doing well, which is a common way to inquire about someone's well-being in Japanese.",
+            "latency": 5.858224153518677,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"早上好，你好吗？\"",
+            "prompt_len": 46,
+            "response_len": 107,
+            "iteration": 4,
+            "response": "The translation of \"早上好，你好吗？\" into English is:\n\n\"Good morning, how are you?\"\n\nHere's a breakdown of the translation:\n\n* \"早上好\" means \"good morning\"\n* \"你好\" is the formal way of saying \"you're doing well\"\n* The question mark at the end is a polite way of asking if the person is doing well\n\nIf you want to be more casual, you can simply say \"好天天\" which means \"good day\" or \"good morning\".",
+            "latency": 6.880399703979492,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"早上好，你好吗？\"",
+            "prompt_len": 46,
+            "response_len": 27,
+            "iteration": 5,
+            "response": "The translation of \"早上好，你好吗？\" into English is:\n\n\"Good morning, good morning! How are you?\"",
+            "latency": 2.326251983642578,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 49,
+            "response_len": 143,
+            "iteration": 1,
+            "response": "\"细胞质中，核糖体是细胞的能量生产中心\"（The mitochondrion is the powerhouse of the cell.）\n\nHere's a breakdown of the translation:\n\n- \"The mitochondrion\" remains the same, as it's a specific term for the mitochondria in biology.\n- \"powerhouse of the cell\" translates to \"\" (shēng jiāng de zhēn shēng) in Chinese, which roughly means the \"energy-producing center\" or \"powerhouse\" of the cell.\n\nSo, the full translation is: \"\" (shēng jiāng de zhēn shēng) (The mitochondrion is the powerhouse of the cell.)",
+            "latency": 8.747266054153442,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 49,
+            "response_len": 116,
+            "iteration": 2,
+            "response": "在细胞中，克罗恩细胞（Cryonucleus）中，核质层（nucleolus）是细胞的“小脑”，负责核糖体的合成和增殖。\n\n然而，如果我们说“核质层”是“小脑”那么这个描述并不准确。实际上，核质层是细胞的“大脑”，它负责控制细胞的所有生理功能。\n\n因此，正确的说法是：“核质层是细胞的“大脑”，它控制着细胞的所有生理功能”",
+            "latency": 5.481446981430054,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 49,
+            "response_len": 55,
+            "iteration": 3,
+            "response": "Here's the translation:\n\n\"胚胎核（mitochondrion）是细胞的能量中心.\"\n\n(Note: In Chinese, the word for \"mitochondrion\" is \"胚胎核\", which literally translates to \"embryonic nucleus\".)",
+            "latency": 2.6353399753570557,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 49,
+            "response_len": 256,
+            "iteration": 4,
+            "response": "\"细胞质中有一个称为核糖体的特殊结构，是细胞的神经系统，负责将营养物质运输至细胞的各个部位，包括细胞的分裂、合成和分解过程中的关键步骤。\n\n核糖体是由核糖、蛋白质和脂肪酸组成的复合物，在细胞中起着至关重要的作用。它是细胞中运载和加工营养物质的主要场所，包括蛋白质的合成、糖分解和脂肪酸的合成等。\n\n核糖体的主要功能包括：\n\n1. 生成细胞内的营养物质，包括蛋白质、脂肪酸和碳水化合物等。\n2. 促进细胞的分裂和增殖。\n3. 参与细胞的修复和修复过程。\n\n因此，核糖体是细胞的重要组成部分，具有高度的功能和作用。\"\n\n（Note: I've used the Simplified Chinese character set and avoided any technical jargon to make it easier to understand.)\n\nAlternatively, here's a more poetic translation:\n\n\"细胞的中心是核糖体，是一\ufffd",
+            "latency": 20.175981760025024,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 49,
+            "response_len": 19,
+            "iteration": 5,
+            "response": " mitochondrial  是  红细胞 中的一个重要 organelle，负责产生能量。",
+            "latency": 1.8707122802734375,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"线粒体是细胞的动力源。\"",
+            "prompt_len": 49,
+            "response_len": 32,
+            "iteration": 1,
+            "response": "The translation of the sentence \"线粒体是细胞的动力源\" into English is:\n\n\"Mitochondria are the energy sources of the cell.\"",
+            "latency": 2.7178587913513184,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"线粒体是细胞的动力源。\"",
+            "prompt_len": 49,
+            "response_len": 17,
+            "iteration": 2,
+            "response": "Here's the translation:\n\n\"Mitochondria are the energy source of the cell.\"",
+            "latency": 1.5084998607635498,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"线粒体是细胞的动力源。\"",
+            "prompt_len": 49,
+            "response_len": 31,
+            "iteration": 3,
+            "response": "The translation of the phrase \"线粒体是细胞的动力源\" into English is:\n\n\"Mitochondria are the cell's energy source.\"",
+            "latency": 2.6356089115142822,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"线粒体是细胞的动力源。\"",
+            "prompt_len": 49,
+            "response_len": 44,
+            "iteration": 4,
+            "response": "The translation of \"线粒体是细胞的动力源\" into English is:\n\n\"The mitochondria are the energy source of the cell.\"\n\nOr, in a more concise version:\n\n\"The mitochondria power the cell.\"",
+            "latency": 3.5060598850250244,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"线粒体是细胞的动力源。\"",
+            "prompt_len": 49,
+            "response_len": 28,
+            "iteration": 5,
+            "response": "The translation of \"线粒体是细胞的动力源\" into English is:\n\n\"The mitochondria are the cell's energy source.\"",
+            "latency": 2.2569828033447266,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 45,
+            "response_len": 124,
+            "iteration": 1,
+            "response": "Here's the translation:\n\n\"Доброго расспеваю, как alles?\" \n\n- or\n\n\"Доброго ранга, как alles?\" \n\n- or\n\n\"Доброго дня, как alles?\" \n\n( translation of \"how are you\" is not necessary in the question, but if you want to ask \"how are you\" in the question, the translation would be:\n\n\"Доброе утро, как alles?\" \n\n- or \n\n\"Доброе утро, как alles?\" \n\n- or \n\n\"Доброе утро, как alles?\"",
+            "latency": 10.214195013046265,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 45,
+            "response_len": 15,
+            "iteration": 2,
+            "response": "Here's the translation:\n\n\"Добрый день, как tudo?\"",
+            "latency": 1.3992688655853271,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 45,
+            "response_len": 15,
+            "iteration": 3,
+            "response": "Here's the translation:\n\n\"Добрый день, как tudo?\"",
+            "latency": 1.3878071308135986,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 45,
+            "response_len": 15,
+            "iteration": 4,
+            "response": "Here's the translation:\n\n\"Добрый день, как alles?\"",
+            "latency": 1.3438940048217773,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 45,
+            "response_len": 15,
+            "iteration": 5,
+            "response": "Here's the translation:\n\n\"Добрый день, как все?\"",
+            "latency": 1.3259251117706299,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"Доброе утро, как дела?\"",
+            "prompt_len": 48,
+            "response_len": 26,
+            "iteration": 1,
+            "response": "The translation of \"Доброе утро, как дела?\" into English is:\n\n\"Good morning, how are you?\"",
+            "latency": 1.3940629959106445,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"Доброе утро, как дела?\"",
+            "prompt_len": 48,
+            "response_len": 26,
+            "iteration": 2,
+            "response": "The translation of \"Доброе утро, как дела?\" into English is:\n\n\"Good morning, how are you?\"",
+            "latency": 1.29435396194458,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"Доброе утро, как дела?\"",
+            "prompt_len": 48,
+            "response_len": 61,
+            "iteration": 3,
+            "response": "The translation of \"Доброе утро, как дела?\" into English is:\n\n\"Good morning, how are you?\"\n\nor\n\n\"Good morning, how are you doing?\"\n\nThis is a common way to greet someone in many Eastern European countries, including Russia, Ukraine, Belarus, and others.",
+            "latency": 2.8953731060028076,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"Доброе утро, как дела?\"",
+            "prompt_len": 48,
+            "response_len": 99,
+            "iteration": 4,
+            "response": "The translation of \"Доброе утро, как дела?\" into English is:\n\n\"Good morning, how are you?\"\n\nHere's a breakdown of the translation:\n\n* \"Доброе\" (Dobroye) is a Russian word that means \"good morning\".\n* \"утро\" (utro) means \"morning\".\n* \"Как дела?\" (ka dela) is a Russian phrase that means \"how are you?\" or \"what's new with you?\"",
+            "latency": 4.752060174942017,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"Доброе утро, как дела?\"",
+            "prompt_len": 48,
+            "response_len": 81,
+            "iteration": 5,
+            "response": "The translation of \"Доброе утро, как дела?\" into English is:\n\n\"Good morning, how are you?\"\n\nHere's a breakdown of the translation:\n\n- \"Доброе\" is a formal way of saying \"good morning\" in Russian.\n- \"утро\" means \"morning\".\n- \"Как дела?\" is a common Russian phrase that means \"how are you?\"",
+            "latency": 3.8244779109954834,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Russian: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 49,
+            "response_len": 15,
+            "iteration": 1,
+            "response": "\"Митохондрион - это центр力量 для клетки.\"",
+            "latency": 0.7832911014556885,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Russian: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 49,
+            "response_len": 14,
+            "iteration": 2,
+            "response": "\"Mитохондрион - это мощныйmotor клетки.\"",
+            "latency": 0.7408549785614014,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Russian: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 49,
+            "response_len": 26,
+            "iteration": 3,
+            "response": "\"Митохондрион - это мачете цели, которая содержит электронные Transport Chain.",
+            "latency": 1.2619109153747559,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Russian: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 49,
+            "response_len": 26,
+            "iteration": 4,
+            "response": "\"Митохондрион - это основная химическая мольная электрическая-machine cellа.\"",
+            "latency": 1.294222116470337,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into Russian: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 49,
+            "response_len": 16,
+            "iteration": 5,
+            "response": "\"Митохондриум - это мощный двигатель клетки.\"",
+            "latency": 0.8302040100097656,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"Митохондрия — это электростанция клетки.\"",
+            "prompt_len": 54,
+            "response_len": 33,
+            "iteration": 1,
+            "response": "The translation of \"Mitochondria — это электростанция клетки\" into English is:\n\n\"Mitochondria - the cell's power station\"",
+            "latency": 2.9249401092529297,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"Митохондрия — это электростанция клетки.\"",
+            "prompt_len": 54,
+            "response_len": 35,
+            "iteration": 2,
+            "response": "The translation of \"Митохондрия — это электростанция клетки\" into English is:\n\n\"Mitochondria - the cell's energy station.\"",
+            "latency": 3.490708112716675,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"Митохондрия — это электростанция клетки.\"",
+            "prompt_len": 54,
+            "response_len": 36,
+            "iteration": 3,
+            "response": "The translation of \"МитохONDРИЯ — это электростанция клетки\" into English is:\n\n\"Mitochondria - the cell's power plant.\"",
+            "latency": 3.1891541481018066,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"Митохондрия — это электростанция клетки.\"",
+            "prompt_len": 54,
+            "response_len": 17,
+            "iteration": 4,
+            "response": "Here's the translation:\n\n\"Mitochondria - the power plant of the cell.\"",
+            "latency": 1.5261890888214111,
+            "peak_memory": 2.5252420878825
+        },
+        {
+            "prompt": "Translate the following into English: \"Митохондрия — это электростанция клетки.\"",
+            "prompt_len": 54,
+            "response_len": 70,
+            "iteration": 5,
+            "response": "The translation of \"Митохондрия — это электростанция клетки\" into English is:\n\n\"Mitochondria - the cell's electrical station\"\n\nOr, in a more detailed way:\n\n\"Mitochondria - the cell's power station\"\n\nOr, more simply:\n\n\"Mitochondria - the cell's energy source\"",
+            "latency": 6.6338019371032715,
+            "peak_memory": 2.5252420878825
+        }
+    ]
+}

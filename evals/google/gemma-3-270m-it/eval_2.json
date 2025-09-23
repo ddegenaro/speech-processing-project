@@ -1,0 +1,549 @@
+{
+    "model_name": "google/gemma-3-270m-it",
+    "load_time": 2.5049469470977783,
+    "cpu_mem_usage": 0.4993717670440674,
+    "gpu_mem_usage": 0.815859317779541,
+    "size_on_disk": 0.4993966370820999,
+    "results": [
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 11,
+            "response_len": 18,
+            "iteration": 1,
+            "response": "Why don't scientists trust atoms? \n\nBecause they make up everything! \n",
+            "latency": 1.8436510562896729,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 11,
+            "response_len": 17,
+            "iteration": 2,
+            "response": "Why don't scientists trust atoms? \n\nBecause they make up everything!\n",
+            "latency": 0.9649689197540283,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 11,
+            "response_len": 17,
+            "iteration": 3,
+            "response": "Why don't scientists trust atoms? \n\nBecause they make up everything!\n",
+            "latency": 0.9666440486907959,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 11,
+            "response_len": 18,
+            "iteration": 4,
+            "response": "Why don't scientists trust atoms? \n\nBecause they make up everything! \n",
+            "latency": 1.0415079593658447,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Tell me a joke.",
+            "prompt_len": 11,
+            "response_len": 17,
+            "iteration": 5,
+            "response": "Why don't scientists trust atoms? \n\nBecause they make up everything!\n",
+            "latency": 0.9853639602661133,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 13,
+            "response_len": 21,
+            "iteration": 1,
+            "response": "That's a really interesting question! What color do you think would be the most beautiful? 😊\n",
+            "latency": 1.5224552154541016,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 13,
+            "response_len": 38,
+            "iteration": 2,
+            "response": "As a large language model, I don't have personal preferences like colors. However, I can tell you that the color blue is often associated with calmness, serenity, and trust.\n",
+            "latency": 2.3005869388580322,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 13,
+            "response_len": 17,
+            "iteration": 3,
+            "response": "That's a great question! What color do you like the most? \n",
+            "latency": 1.024320125579834,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 13,
+            "response_len": 27,
+            "iteration": 4,
+            "response": "That's a really interesting question! As a large language model, I don't have personal preferences like humans do. \n",
+            "latency": 1.5533130168914795,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "What's your favorite color?",
+            "prompt_len": 13,
+            "response_len": 17,
+            "iteration": 5,
+            "response": "That's a tough one! What color do you like the most? \n",
+            "latency": 1.0158648490905762,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 13,
+            "response_len": 8,
+            "iteration": 1,
+            "response": "The capital of France is Paris.\n",
+            "latency": 0.5026419162750244,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 13,
+            "response_len": 7,
+            "iteration": 2,
+            "response": "The capital of France is Paris.",
+            "latency": 0.3892500400543213,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 13,
+            "response_len": 8,
+            "iteration": 3,
+            "response": "The capital of France is Paris.\n",
+            "latency": 0.4513380527496338,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 13,
+            "response_len": 8,
+            "iteration": 4,
+            "response": "The capital of France is Paris.\n",
+            "latency": 0.44387292861938477,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "What is the capital of France?",
+            "prompt_len": 13,
+            "response_len": 8,
+            "iteration": 5,
+            "response": "The capital of France is Paris.\n",
+            "latency": 0.6053328514099121,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 9,
+            "response_len": 256,
+            "iteration": 1,
+            "response": "Photosynthesis is the remarkable process by which plants, algae, and some bacteria convert light energy into chemical energy in the form of glucose (sugar). This process is essential for life on Earth, as it provides the primary source of energy for most organisms.\n\nHere's a breakdown of the key steps involved:\n\n1. **Light Absorption:** Plants utilize chlorophyll, a green pigment found in their leaves, to absorb sunlight. This sunlight provides the energy needed to drive the process.\n\n2. **Water Uptake:** Plants take in water through their roots, which is transported to the leaves through the stomata.\n\n3. **Carbon Dioxide Intake:** Plants also absorb carbon dioxide (CO2) from the air through tiny pores on their leaves called stomata.\n\n4. **The Magic Happens:** Inside the chloroplasts (the organelles where photosynthesis takes place), the captured sunlight energy is used to convert water and carbon dioxide into glucose (sugar). This process is called photosynthesis.\n\n5. **Glucose as Food:** The glucose produced during photosynthesis is then used by the plant to build its own food (sugars) and release oxygen as a byproduct. Oxygen is essential for the respiration of animals and humans, which is why we breathe.\n\nIn essence, photosynthesis is a",
+            "latency": 15.872542142868042,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 9,
+            "response_len": 256,
+            "iteration": 2,
+            "response": "Photosynthesis is the remarkable process by which plants, algae, and some bacteria convert light energy into chemical energy in the form of glucose (sugar). It's essentially how life on Earth harnesses the power of the sun.\n\nHere's a breakdown of the key components:\n\n*   **Ingredients:** Plants absorb carbon dioxide (CO2) from the atmosphere through tiny pores on their leaves called stomata. They also absorb water through their roots and use the energy from sunlight to transform these ingredients into glucose (sugar).\n\n*   **Process:** Photosynthesis occurs in two main stages:\n    *   **Light-Dependent Reactions:** These reactions take place in the thylakoids within the chloroplasts. Chlorophyll absorbs light energy, which excites electrons in the thylakoid membranes. This excited electrons are then passed along an electron transport chain. As electrons move down the chain, they are used to create a proton gradient across the thylakoid membrane, which is a form of electrical energy. This proton gradient drives the synthesis of ATP (adenosine triphosphate) and NADPH (neuter triphosphate).\n    *   **Light-Independent Reactions (Calvin Cycle):** These reactions occur in the stroma of the chloroplasts. They require the energy from ATP",
+            "latency": 14.165083885192871,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 9,
+            "response_len": 256,
+            "iteration": 3,
+            "response": "Photosynthesis is the remarkable process by which plants, algae, and some bacteria convert light energy into chemical energy in the form of glucose (sugar). It's essentially how life on Earth harnesses the power of the sun to create its own food.\n\nHere's a breakdown of the key steps involved:\n\n1.  **Light Absorption:** Plants use sunlight as their energy source. They capture this energy through specialized pigments called chlorophyll, which are found in their leaves. Chlorophyll absorbs light energy, which is then used to drive a chemical reaction.\n\n2.  **Water Uptake:** Plants absorb water through their roots, which is transported to the leaves.\n\n3.  **Carbon Dioxide Intake:** Plants also absorb carbon dioxide from the atmosphere through tiny pores on their leaves called stomata.\n\n4.  **The \"Photosynthesis Equation\":** The process of photosynthesis is represented by the following equation:\n\n    `6CO₂ + 6H₂O + Sunlight → C₆H₆O₂ + 6O₂`\n\n    This equation describes how plants use sunlight, water, and carbon dioxide to create glucose (sugar) and oxygen as a byproduct.\n\n5.  **Glucose Production:** The plant uses the glucose produced during photosynthesis to:\n\n",
+            "latency": 14.032387971878052,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 9,
+            "response_len": 256,
+            "iteration": 4,
+            "response": "Photosynthesis is a remarkable process by which plants, algae, and some bacteria convert light energy into chemical energy in the form of glucose (sugar). It's essentially how plants make their own food.\n\nHere's a breakdown of the key steps:\n\n1.  **Light Absorption:** Plants have specialized structures called chloroplasts, which contain a green pigment called chlorophyll. Chlorophyll absorbs sunlight, which is the primary source of energy for photosynthesis.\n\n2.  **Water Uptake:** Plants absorb water through their roots, which is transported to the leaves.\n\n3.  **Carbon Dioxide Intake:** Plants take in carbon dioxide (CO2) from the air through tiny pores called stomata.\n\n4.  **Chloroplasts and the Pigment Reaction:** Inside the chloroplasts, chlorophyll captures light energy. This energy is used to convert water and carbon dioxide into glucose (sugar) and oxygen.\n\n5.  **Sugar Production:** The glucose produced during photosynthesis is used by the plant for energy, growth, and other metabolic processes.\n\n6.  **Waste Products:** As a byproduct of photosynthesis, the plant releases oxygen into the atmosphere. This oxygen is essential for the survival of many organisms on Earth, including humans.\n\n**In summary, photosynthesis is",
+            "latency": 14.156961917877197,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Explain photosynthesis.",
+            "prompt_len": 9,
+            "response_len": 256,
+            "iteration": 5,
+            "response": "Photosynthesis is the remarkable process by which plants, algae, and some bacteria convert light energy into chemical energy in the form of glucose (sugar). It's essentially how life on Earth harnesses the sun's power to create food.\n\nHere's a breakdown of the process:\n\n*   **Ingredients:**\n    *   **Sunlight:** This is the primary energy source. Plants absorb sunlight through their leaves.\n    *   **Water:** Plants absorb water through their roots.\n    *   **Carbon Dioxide:** A gas in the air, taken in from the atmosphere.\n    *   **Chlorophyll:** A pigment that captures light energy.\n    *   **Glucose:** The sugar produced during photosynthesis.\n\n*   **The Process:**\n\n    1.  **Light Absorption:** Plants use the energy from sunlight to convert water and carbon dioxide into glucose (a sugar). This process is called photosynthesis.\n\n    2.  **Chemiosmolysis:** The process also involves the energy from the sun being used to create ATP (adenosine triphosphate) and NADPH (natural product). ATP and NADPH are the energy carriers that power the Calvin cycle.\n\n    3.  **Carbon Fixation:** The carbon dioxide and water are combined in the chloroplast",
+            "latency": 14.20606017112732,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 193,
+            "iteration": 1,
+            "response": "The most common and natural translation of \"Good morning, how are you?\" in Chinese is:\n\n**早上好，你好吗？**\n\nHere's a breakdown of the translation:\n\n*   **早上好 (zǎo zài hǎo):** Morning/Good morning\n*   **你好吗 (nǐ hǎo ma):** How are you? (Formal)\n*   **你好吗？ (nǐ hǎo ma?)**: How are you? (Informal)\n\nOther possible translations, depending on the context, include:\n\n*   **早上好，你还好吗？ (zǎo zài hǎo, nǐ hǎo hǎo?)**: How are you? (More casual)\n*   **早上好，你怎么样？ (zǎo zài hǎo, nǐ zěn shang?)**: How are you? (More informal)\n\nTherefore, the best translation depends on the context.\n",
+            "latency": 12.208187818527222,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 49,
+            "iteration": 2,
+            "response": "The most common and natural translation of \"Good morning, how are you?\" in Chinese is:\n\n**早上好，你好吗？**\n\nThis translates to \"Good morning, how are you?\" and is a polite and common greeting.\n",
+            "latency": 2.7361972332000732,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 218,
+            "iteration": 3,
+            "response": "The most common and natural translation of \"Good morning, how are you?\" in Chinese is:\n\n**早上好，你好吗？**\n\nHere's a breakdown of the translation:\n\n*   **早上好 (zǎo zài hǎo):** Good morning\n*   **你好 (nǐ hǎo):** Hello\n*   **吗 (ma):** Question mark\n\nOther options, depending on the context, include:\n\n*   **早上好吗？ (zǎo zài hǎo ma?)**:  \"Good morning, how are you?\" (slightly more polite)\n*   **早上好，你好吗？ (zǎo zài hǎo, nǐ hǎo ma?)**:  \"Good morning, how are you?\" (more formal)\n*   **早上好，你好吗？ (zǎo zài hǎo, nǐ hǎo ma?)**:  \"Good morning, how are you?\" (more casual)\n\nTherefore, **早上好，你好吗？** is the best and most versatile option.\n",
+            "latency": 12.208077907562256,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 25,
+            "iteration": 4,
+            "response": "The translation of \"Good morning, how are you?\" into Chinese is:\n\n**早上好，你好吗？**\n",
+            "latency": 1.425152063369751,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 25,
+            "iteration": 5,
+            "response": "The translation of \"Good morning, how are you?\" into Chinese is:\n\n**早上好，你呢？**\n",
+            "latency": 1.3924667835235596,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"早上好，你好吗？\"",
+            "prompt_len": 20,
+            "response_len": 23,
+            "iteration": 1,
+            "response": "The translation of \"早上好，你好吗？\" is:\n\n\"Good morning, how are you?\"\n",
+            "latency": 1.3091530799865723,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"早上好，你好吗？\"",
+            "prompt_len": 20,
+            "response_len": 24,
+            "iteration": 2,
+            "response": "The translation of \"早上好，你好吗？\" is:\n\n**Good morning, how are you?**\n",
+            "latency": 1.452397108078003,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"早上好，你好吗？\"",
+            "prompt_len": 20,
+            "response_len": 24,
+            "iteration": 3,
+            "response": "The translation of \"早上好，你好吗？\" is:\n\n**Good morning, how are you?**\n",
+            "latency": 1.366636037826538,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"早上好，你好吗？\"",
+            "prompt_len": 20,
+            "response_len": 25,
+            "iteration": 4,
+            "response": "The translation of \"早上好，你好吗？\" is:\n\n* **Good morning, how are you?**\n",
+            "latency": 1.4196710586547852,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"早上好，你好吗？\"",
+            "prompt_len": 20,
+            "response_len": 23,
+            "iteration": 5,
+            "response": "The translation of \"早上好，你好吗？\" is:\n\n\"Good morning, how are you?\"\n",
+            "latency": 1.3110249042510986,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 23,
+            "response_len": 15,
+            "iteration": 1,
+            "response": "The translation is:\n\n** mitochondria is the powerhouse of the cell.**\n",
+            "latency": 1.179825782775879,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 23,
+            "response_len": 29,
+            "iteration": 2,
+            "response": "The translation of \"The mitochondrion is the powerhouse of the cell\" into Chinese is:\n\n** mitochondria is the powerhouse of the cell.**\n",
+            "latency": 1.7812979221343994,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 23,
+            "response_len": 17,
+            "iteration": 3,
+            "response": "The most accurate translation is:\n\n** mitochondria is the powerhouse of the cell.**\n",
+            "latency": 0.9821391105651855,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 23,
+            "response_len": 15,
+            "iteration": 4,
+            "response": "The translation is:\n\n** mitochondria is the powerhouse of the cell.**\n",
+            "latency": 0.9137001037597656,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Chinese: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 23,
+            "response_len": 31,
+            "iteration": 5,
+            "response": "The most accurate translation of \"The mitochondrion is the powerhouse of the cell\" into Chinese is:\n\n** mitochondria 是细胞的强大力量。**\n",
+            "latency": 1.7854619026184082,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"线粒体是细胞的动力源。\"",
+            "prompt_len": 22,
+            "response_len": 25,
+            "iteration": 1,
+            "response": "The translation of \"线粒体是细胞的动力源\" is:\n\n\"Cells are the source of life.\"\n",
+            "latency": 1.5244929790496826,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"线粒体是细胞的动力源。\"",
+            "prompt_len": 22,
+            "response_len": 26,
+            "iteration": 2,
+            "response": "The translation of \"线粒体是细胞的动力源\" is:\n\n\"Cell organelles are the source of life.\"\n",
+            "latency": 1.473963975906372,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"线粒体是细胞的动力源。\"",
+            "prompt_len": 22,
+            "response_len": 28,
+            "iteration": 3,
+            "response": "The translation of \"线粒体是细胞的动力源\" is:\n\n**Cell organelles are the source of life in cells.**\n",
+            "latency": 1.6167759895324707,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"线粒体是细胞的动力源。\"",
+            "prompt_len": 22,
+            "response_len": 28,
+            "iteration": 4,
+            "response": "The translation of \"线粒体是细胞的动力源\" is:\n\n\"Lineage is the source of motivation in cells.\"\n",
+            "latency": 1.6149239540100098,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"线粒体是细胞的动力源。\"",
+            "prompt_len": 22,
+            "response_len": 26,
+            "iteration": 5,
+            "response": "The translation of \"线粒体是细胞的动力源\" is:\n\n\"Cell organelles are the source of life.\"\n",
+            "latency": 1.5030789375305176,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 25,
+            "iteration": 1,
+            "response": "The translation of \"Good morning, how are you?\" into Russian is:\n\n**\"Здравствуйте, как дела?\"**\n",
+            "latency": 1.4566614627838135,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 27,
+            "iteration": 2,
+            "response": "The translation of \"Good morning, how are you?\" into Russian is:\n\n**\"Здравствуйте, как у вас дела?\"**\n",
+            "latency": 1.4856200218200684,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 27,
+            "iteration": 3,
+            "response": "The translation of \"Good morning, how are you?\" into Russian is:\n\n**\"Здравствуйте, как у вас дела?\"**\n",
+            "latency": 1.5631799697875977,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 26,
+            "iteration": 4,
+            "response": "The translation of \"Good morning, how are you?\" into Russian is:\n\n**Добрый день, как у вас?**\n",
+            "latency": 1.4951438903808594,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Russian: \"Good morning, how are you?\"",
+            "prompt_len": 20,
+            "response_len": 26,
+            "iteration": 5,
+            "response": "The translation of \"Good morning, how are you?\" into Russian is:\n\n**\"Добрый день, как дела?\"**\n",
+            "latency": 1.487950086593628,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"Доброе утро, как дела?\"",
+            "prompt_len": 20,
+            "response_len": 23,
+            "iteration": 1,
+            "response": "The translation of \"Доброе утро, как дела?\" is:\n\n\"Good morning, how are you?\"\n",
+            "latency": 1.2702808380126953,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"Доброе утро, как дела?\"",
+            "prompt_len": 20,
+            "response_len": 25,
+            "iteration": 2,
+            "response": "The translation of \"Доброе утро, как дела?\" into English is:\n\n\"Good morning, how are you?\"\n",
+            "latency": 1.4037141799926758,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"Доброе утро, как дела?\"",
+            "prompt_len": 20,
+            "response_len": 27,
+            "iteration": 3,
+            "response": "The translation of \"Доброе утро, как дела?\" into English is:\n\n**Good morning, how are you doing?**\n",
+            "latency": 1.5021109580993652,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"Доброе утро, как дела?\"",
+            "prompt_len": 20,
+            "response_len": 26,
+            "iteration": 4,
+            "response": "The translation of \"Доброе утро, как дела?\" is:\n\n*   **Good morning, how are you?**\n",
+            "latency": 1.4275736808776855,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"Доброе утро, как дела?\"",
+            "prompt_len": 20,
+            "response_len": 25,
+            "iteration": 5,
+            "response": "The translation of \"Доброе утро, как дела?\" into English is:\n\n\"Good morning, how are you?\"\n",
+            "latency": 1.4227180480957031,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Russian: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 23,
+            "response_len": 22,
+            "iteration": 1,
+            "response": "The most common and accurate translation is:\n\n**Микрофаг - это мощный центр клетки.**\n",
+            "latency": 1.247999906539917,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Russian: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 23,
+            "response_len": 32,
+            "iteration": 2,
+            "response": "The translation of \"The mitochondrion is the powerhouse of the cell\" into Russian is:\n\n**Миокарп - это мощный центр клетки.**\n",
+            "latency": 1.8212149143218994,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Russian: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 23,
+            "response_len": 18,
+            "iteration": 3,
+            "response": "The translation is:\n\n**Микрофаг - это мощный центр клетки.**\n",
+            "latency": 1.0449020862579346,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Russian: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 23,
+            "response_len": 18,
+            "iteration": 4,
+            "response": "The translation is:\n\n**Микрофаг - это мощный центр клетки.**\n",
+            "latency": 1.034290075302124,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into Russian: \"The mitochondrion is the powerhouse of the cell.\"",
+            "prompt_len": 23,
+            "response_len": 18,
+            "iteration": 5,
+            "response": "The translation is:\n\n**Множитель - это мощный центр клетки.**\n",
+            "latency": 1.061957836151123,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"Митохондрия — это электростанция клетки.\"",
+            "prompt_len": 25,
+            "response_len": 28,
+            "iteration": 1,
+            "response": "The translation of \"Митохондрия — это электростанция клетки\" is:\n\n**Metabolism is a cell factory.**\n",
+            "latency": 1.911236047744751,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"Митохондрия — это электростанция клетки.\"",
+            "prompt_len": 25,
+            "response_len": 14,
+            "iteration": 2,
+            "response": "The translation is: \"Myocardial infarction is a heart center.\"\n",
+            "latency": 0.8295516967773438,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"Митохондрия — это электростанция клетки.\"",
+            "prompt_len": 25,
+            "response_len": 16,
+            "iteration": 3,
+            "response": "The translation is: \"Mitochondria are a cell in the body.\"\n",
+            "latency": 0.8617599010467529,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"Митохондрия — это электростанция клетки.\"",
+            "prompt_len": 25,
+            "response_len": 18,
+            "iteration": 4,
+            "response": "The translation is:\n\n\"Myocardial infarction is a hospital or a medical facility.\"\n",
+            "latency": 1.0541110038757324,
+            "peak_memory": 0.8235497467072128
+        },
+        {
+            "prompt": "Translate the following into English: \"Митохондрия — это электростанция клетки.\"",
+            "prompt_len": 25,
+            "response_len": 28,
+            "iteration": 5,
+            "response": "The translation of \"Митохондрия — это электростанция клетки\" is:\n\n**Myocardial infarction is a hospital.**\n",
+            "latency": 1.5905280113220215,
+            "peak_memory": 0.8235497467072128
+        }
+    ]
+}
