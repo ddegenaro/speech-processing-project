@@ -80,3 +80,7 @@ Information included:
   - Response generated
   - Latency in seconds (subtract 3 for remote due to `time.sleep` calls used to prevent rate limiting)
   - Estimated peak memory usage (GB, -1.0 if no GPU or not local)
+
+## Data visualization
+
+All data visualizations used in the paper can be generated using the IPython notebook `eval_viz.ipynb`. Figures are automatically saved to the `figs` subfolder.
