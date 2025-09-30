@@ -28,7 +28,15 @@ and install the appropriate packages (or skip this step if you think the version
 python -m pip install -r requirements.txt
 ```
 
-Run the following to open the user interface:
+Additionally, be sure to install `ffmpeg`. On a Mac, this can usually be installed with `brew`:
+
+```bash
+brew install ffmpeg
+```
+
+On other OS, the process can be a bit more complicated. A great tutorial can be found [on the page for a project I authored](https://ddegenaro.github.io/whisper-ui/).
+
+Finally, run the following to open the user interface:
 
 ```bash
 python ui.py
