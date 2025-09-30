@@ -1,6 +1,10 @@
 import os
 import sys
+import glob
 from functools import partial
+import time
+import threading
+
 import tkinter as tk
 from tkinter import (
     Menu,
@@ -11,24 +15,50 @@ from tkinter import (
     X,
     Label,
     Entry,
-    simpledialog
+    simpledialog,
+    ttk,
+    filedialog
 )
 from tkinter.scrolledtext import ScrolledText
-
 from huggingface_hub import login
+import sounddevice as sd
+import soundfile as sf
+import numpy as np
+import webrtcvad
+import librosa
+import whisper
+import seaborn as sns
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 from models import (
     AVAILABLE_LOCAL_MODELS,
     AVAILABLE_REMOTE_MODELS,
+    AVAILABLE_SPEECH_MODELS,
+    AVAILABLE_VAD_MODELS,
     load_local_model,
     load_remote_model,
-    ModelInterface
+    load_speech_model,
+    ModelInterface,
+    SpeechModelInterface,
+    SAMPLE_RATE,
+    CHANNELS,
+    AUDIO_DIR
 )
 
 if os.path.exists('hf_secret.txt'):
     HF_API_KEY = open('hf_secret.txt', 'r', encoding='utf-8').read().strip()
 else:
     HF_API_KEY = None
+
+current_speak_stop_event = None
+
+def set_vad_sensitivity(sensitivity):
+    global app
+
+    app.vad.set_mode(sensitivity)
+
+    print(f'SYSTEM: VAD sensitivity set to {sensitivity}.\n\n> ', end='')
 
 def clear_chat_history():
     global app
@@ -42,19 +72,247 @@ def send_message(dummy=None):
 
     msg = app.glob_path_entry.get().strip()
 
-    app.glob_path_entry.delete(0, tk.END)
-
     response = None
 
-    print(f'YOU: {msg}\n\n> ', end='')
-
     if app.mi.model_name is None:
-        print(f'SYSTEM: No model selected yet. Choose from the menus above.\n\n> ', end='')
+        print(f'SYSTEM: No model selected yet. Choose from "Local models" or "Remote models" above.\n\n> ', end='')
+        return
     else:
+        app.glob_path_entry.delete(0, tk.END)
+        print(f'YOU: {msg}\n\n> ', end='')
         response = app.mi.call(msg)
 
     if response:
         print(f'RESPONSE: {response}\n\n> ', end='')
+    else:
+        print(f'SYSTEM: Model did not respond.\n\n> ', end='')
+
+def stop():
+    global current_speak_stop_event
+    if current_speak_stop_event:
+        current_speak_stop_event.set()
+
+def speak():
+    global app, current_speak_stop_event
+
+    if app.smi.model is None:
+        print(f'SYSTEM: No speech model selected yet. Choose from "Speech models" above.\n\n> ', end='')
+        return
+
+    current_speak_stop_event = threading.Event()
+
+    app.speak_button.config(text="Stop", fg="red", command=stop)
+
+    app.glob_path_entry.delete(0, tk.END)
+
+    def recording_task():
+        global app, current_speak_stop_event
+        try:
+            audio_data = record_speech(current_speak_stop_event)
+            loc = save_audio_file(audio_data, 'temp.wav')
+
+            transcription = app.smi.call(loc)
+            text = transcription['text'].strip()
+            lang = transcription['language']
+            print(f'SYSTEM: Language identified: {lang}.\n\n>', end='')
+
+            app.glob_path_entry.insert(0, text)
+
+            # send_message()
+
+        finally:
+            app.speak_button.config(text="Speak", fg="green", command=speak)
+            current_speak_stop_event = None
+
+    threading.Thread(target=recording_task, daemon=True).start()
+
+def record_speech(stop_event): # Significant help from Claude
+
+    global app
+
+    audio = []
+
+    last_speech_time = time.time()
+    frame_size = int(SAMPLE_RATE * 0.03)  # 30ms frames
+
+    def callback(indata, frames, time_info, status):
+        nonlocal last_speech_time
+        if not stop_event.is_set():
+            audio.append(indata.copy())
+            
+            # Check for speech
+            audio_int16 = (indata.flatten() * 32767).astype(np.int16)
+            if len(audio_int16) >= frame_size:
+                frame_bytes = audio_int16[:frame_size].tobytes()
+                if app.vad.is_speech(frame_bytes, SAMPLE_RATE):
+                    last_speech_time = time.time()
+
+    with sd.InputStream(
+        callback=callback,
+        channels=CHANNELS,
+        samplerate=SAMPLE_RATE,
+        blocksize=frame_size
+    ):
+        while not stop_event.is_set():
+            # Auto-stop after 1.0 second of silence
+            if time.time() - last_speech_time > 1.0:
+                break
+            sd.sleep(100)
+
+    if audio:
+        return np.concatenate(audio, axis=0).flatten()
+    else:
+        return np.array([])
+    
+def save_audio_file(audio, name=None):
+
+    global app
+
+    os.makedirs(AUDIO_DIR, exist_ok=True)
+
+    if name is None:
+        name = 'audio_1'
+    
+    if not name.endswith('.wav'):
+        name_wav += '.wav'
+    else:
+        name_wav = name
+    
+    loc = os.path.join(AUDIO_DIR, name_wav)
+
+    if os.path.exists(loc):
+        if not loc.startswith('temp') and not loc.endswith('.wav'):
+            print(f'SYSTEM: Warning: {loc} already exists.\n\n> ', end='')
+        matches = glob.glob(f'{AUDIO_DIR}/{name}_*.wav')
+        if matches:
+            k = max([
+                int(m.split('_')[1][:-4]) for m in matches
+            ]) + 1
+        else:
+            k = 1
+        loc = os.path.join(AUDIO_DIR, f'{name}_{k}.wav')
+    
+    sf.write(loc, audio, SAMPLE_RATE)
+    if not loc.endswith('temp.wav'):
+        print(f'SYSTEM: Saved audio to {loc}.\n\n> ', end='')
+
+    app.curr_audio = loc
+    print(f'SYSTEM: Selected {app.curr_audio}.\n\n> ', end='')
+
+    return loc
+
+def load_audio_file():
+    global app
+    app.curr_audio = filedialog.askopenfilename()
+    if app.curr_audio is not None:
+        print(f'SYSTEM: Selected {app.curr_audio}.\n\n> ', end='')
+    else:
+        print(f'SYSTEM: Selection canceled.\n\n> ', end='')
+
+def play_audio_file():
+    global app
+
+    if app.curr_audio is None:
+        print(f'SYSTEM: No audio selected yet. Choose an audio file or speak.\n\n> ', end='')
+        return
+
+    data = whisper.load_audio(app.curr_audio, sr=SAMPLE_RATE)
+
+    app.playback_button.config(text="Stop", fg="red", command=sd.stop)
+
+    def playback_task():
+        global app
+        try:
+            sd.play(data, samplerate=SAMPLE_RATE)
+            sd.wait()
+        finally:
+            app.playback_button.config(text="Play current audio", fg="green", command=play_audio_file)
+
+    threading.Thread(target=playback_task, daemon=True).start()
+
+def spectrogram(): # Significant help from Claude
+    global app
+
+    if app.curr_audio is None:
+        print(f'SYSTEM: No audio selected yet. Load an audio file or speak.\n\n> ', end='')
+        return
+
+    window = tk.Toplevel()
+    window.wm_title('Spectrogram')
+    audio = whisper.load_audio(app.curr_audio, sr=SAMPLE_RATE)
+    mels = librosa.feature.melspectrogram(
+        y=audio,
+        sr=SAMPLE_RATE,
+        n_fft=app.n_fft,
+        hop_length=app.hop_length
+    )
+    mels_db = librosa.power_to_db(mels, ref=np.max)
+
+    fig, ax = plt.subplots(figsize=(10, 4))
+    duration = len(audio) / SAMPLE_RATE
+    num_frames = mels_db.shape[1]
+    time_ticks = np.linspace(0, num_frames, num=6)  # 6 tick marks
+    time_labels = [f'{duration * (tick/num_frames):.1f}' for tick in time_ticks]
+    sns.heatmap(mels_db, ax=ax, cmap='viridis', cbar_kws={'label': 'Power (dB)'})
+
+    ax.set_xlabel('Time (seconds)')
+    ax.set_ylabel('Mel Frequency Bins')
+    ax.set_title('Mel Spectrogram')
+    ax.set_xticks(time_ticks)
+    ax.set_xticklabels(time_labels)
+
+    fig.tight_layout()
+
+    canvas = FigureCanvasTkAgg(fig, master=window)
+    canvas.draw()
+    canvas.get_tk_widget().grid(row=0, column=0)
+
+    close_button = ttk.Button(window, text='Close', command=window.destroy)
+    close_button.grid(row=1, column=0)
+
+def spectrogram_settings():
+    global app
+    
+    def validate_and_save():
+        try:
+            n_fft_val = int(n_fft_entry.get())
+            hop_length_val = int(hop_length_entry.get())
+            
+            if n_fft_val <= 0 or hop_length_val <= 0:
+                raise ValueError("Values must be positive")
+            
+            # Update the app settings
+            app.n_fft = n_fft_val
+            app.hop_length = hop_length_val
+            settings_window.destroy()
+            
+        except ValueError:
+            # Clear the error label if it exists and show new error
+            error_label.config(text="Invalid input: Both values must be positive integers")
+    
+    # Create dialog window
+    settings_window = tk.Toplevel()
+    settings_window.wm_title('Spectrogram Settings')
+    
+    # n_fft label and entry
+    ttk.Label(settings_window, text="n_fft:").grid(row=0, column=0, padx=5, pady=5, sticky='e')
+    n_fft_entry = ttk.Entry(settings_window)
+    n_fft_entry.insert(0, str(app.n_fft))
+    n_fft_entry.grid(row=0, column=1, padx=5, pady=5)
+    
+    # hop_length label and entry
+    ttk.Label(settings_window, text="hop_length:").grid(row=1, column=0, padx=5, pady=5, sticky='e')
+    hop_length_entry = ttk.Entry(settings_window)
+    hop_length_entry.insert(0, str(app.hop_length))
+    hop_length_entry.grid(row=1, column=1, padx=5, pady=5)
+    
+    # Error label (initially empty)
+    error_label = ttk.Label(settings_window, text="", foreground="red")
+    error_label.grid(row=2, column=0, columnspan=2, padx=5, pady=5)
+    
+    # Save button
+    save_button = ttk.Button(settings_window, text="Save", command=validate_and_save)
+    save_button.grid(row=3, column=0, columnspan=2, pady=10)
 
 class PrintLogger(object):  # create file like object
 
@@ -92,7 +350,7 @@ class MainGUI(tk.Tk):
     def __init__(self):
         tk.Tk.__init__(self)
 
-        self.version = '1.0'
+        self.version = '2.0'
 
         self.title(f"Chatbot UI v{self.version}")
         w = 896 # width for the Tk root
@@ -112,6 +370,13 @@ class MainGUI(tk.Tk):
         self.menu = Menu(self)
 
         self.mi = ModelInterface()
+        self.smi = SpeechModelInterface()
+        self.vad = webrtcvad.Vad(2)
+        self.curr_audio = None
+
+        # defaults for spectrogram from librosa
+        self.n_fft = 2048
+        self.hop_length = 512
         
         self.local_menu = Menu(self.menu, tearoff=False)
         for model_name in AVAILABLE_LOCAL_MODELS:
@@ -125,9 +390,28 @@ class MainGUI(tk.Tk):
                 label=model_name,
                 command=partial(load_remote_model, model_name, self.mi)
             )
+        self.speech_menu = Menu(self.menu, tearoff=False)
+        for model_name in AVAILABLE_SPEECH_MODELS:
+            self.speech_menu.add_command(
+                label=model_name,
+                command=partial(load_speech_model, model_name, self.smi)
+            )
+        self.vad_menu = Menu(self.menu, tearoff=False)
+        for sensitivity in AVAILABLE_VAD_MODELS:
+            self.vad_menu.add_command(
+                label=f'Sensitivity {sensitivity}',
+                command=partial(set_vad_sensitivity, sensitivity)
+            )
+        self.audio_menu = Menu(self.menu, tearoff=False)
+        self.audio_menu.add_command(
+            label='Load audio file',
+            command=load_audio_file
+        )
         
         self.menu.add_cascade(label='Local models', menu=self.local_menu)
         self.menu.add_cascade(label='Remote models', menu=self.remote_menu)
+        self.menu.add_cascade(label='Speech models', menu=self.speech_menu)
+        self.menu.add_cascade(label='VAD sensitivity', menu=self.vad_menu)
         self.config(menu=self.menu)
         
         # frames
@@ -194,11 +478,58 @@ class MainGUI(tk.Tk):
             font=("Arial", 16),
             command = send_message
         )
+        self.speak_button = Button(
+            self.file_path_entry_frame,
+            text = "Speak",
+            fg = "green",
+            font=("Arial", 16),
+            command = speak
+        )
         self.file_path_entry_frame.pack(pady=4, fill=X, expand=False)
         self.glob_path_desc.pack(padx=4, side=LEFT)
         self.glob_path_entry.pack(padx=4, side=LEFT, fill=X, expand=True)
         self.send_button.pack(side=LEFT, padx=4)
+        self.speak_button.pack(side=LEFT, padx=4)
         self.bind('<Return>', send_message)
+
+        # audio stuff
+        self.playback_frame = Frame(self.log_console_frame)
+        self.playback_frame.pack(pady=4, fill=X, expand=False)
+        self.audio_buttons = Frame(self.playback_frame)
+        self.audio_buttons.pack()
+        self.load_audio_button = Button(
+            self.audio_buttons,
+            text = "Load audio",
+            fg = "green",
+            font=("Arial", 16),
+            command = load_audio_file
+        )
+        self.playback_button = Button(
+            self.audio_buttons,
+            text = "Play current audio",
+            fg = "green",
+            font=("Arial", 16),
+            command = play_audio_file
+        )
+        self.spectrogram_button = Button(
+            self.audio_buttons,
+            text = "Spectrogram",
+            fg = "black",
+            font=("Arial", 16),
+            command = spectrogram
+        )
+        self.spectrogram_settings_button = Button(
+            self.audio_buttons,
+            text = "Spectrogram settings",
+            fg = "black",
+            font=("Arial", 16),
+            command = spectrogram_settings
+        )
+        
+        self.load_audio_button.pack(padx=4, side=LEFT)
+        self.playback_button.pack(padx=4, side=LEFT)
+        self.spectrogram_button.pack(padx=4, side=LEFT)
+        self.spectrogram_settings_button.pack(padx=4, side=LEFT)
 
         global HF_API_KEY
 

@@ -3,10 +3,26 @@ import re
 import json
 from glob import glob
 from time import time, sleep
+from typing import Union
+import warnings
 
+import numpy as np
 import torch
 from transformers import pipeline, TextGenerationPipeline
 from cerebras.cloud.sdk import Cerebras
+
+import urllib.request
+import ssl
+ssl_context = ssl.create_default_context()
+ssl_context.check_hostname = False
+ssl_context.verify_mode = ssl.CERT_NONE
+opener = urllib.request.build_opener(urllib.request.HTTPSHandler(context=ssl_context))
+urllib.request.install_opener(opener)
+import whisper
+
+SAMPLE_RATE = 16_000
+CHANNELS = 1
+AUDIO_DIR = 'audio'
 
 AVAILABLE_LOCAL_MODELS = sorted([
     "Qwen/Qwen2.5-0.5B-Instruct",
@@ -19,6 +35,12 @@ AVAILABLE_REMOTE_MODELS = sorted([
     "llama3.1-8b",
     "gpt-oss-120b"
 ])
+
+AVAILABLE_SPEECH_MODELS = sorted(
+    whisper.available_models()
+)
+
+AVAILABLE_VAD_MODELS = [0, 1, 2, 3]
 
 thinking = re.compile(r'<think>[\s\S]*</think>')
 
@@ -215,6 +237,43 @@ class ModelInterface:
 
         return overall
 
+class SpeechModelInterface:
+    def __init__(self):
+        self.model = None
+        self.model_name = None
+        self.device = None
+
+    def set_model(self, choice):
+        self.model_name = choice
+        
+        assert choice in AVAILABLE_SPEECH_MODELS
+
+        if torch.backends.mps.is_available():
+            self.device = 'mps'
+        elif torch.cuda.is_available():
+            self.device = 'cuda'
+        else:
+            self.device = 'cpu'
+        
+        try:
+            self.model = whisper.load_model(choice, device=self.device, in_memory=True)
+        except:
+            self.device = 'cpu'
+            self.model = whisper.load_model(choice, device=self.device, in_memory=True)
+
+    def call(self, audio: str):
+
+        audio = whisper.load_audio(audio, sr=SAMPLE_RATE)
+
+        with warnings.catch_warnings():
+            warnings.filterwarnings(
+                "ignore",
+                message="FP16 is not supported on CPU; using FP32 instead"
+            )
+            result = self.model.transcribe(audio)
+
+        return result
+
 def load_local_model(
     choice: str,
     mi: ModelInterface
@@ -297,3 +356,20 @@ def prompt_remote_model(
         return re.sub(thinking, '', response).strip()
     else:
         return response
+
+def load_speech_model(
+    choice: str,
+    smi: SpeechModelInterface
+):
+    if choice not in AVAILABLE_SPEECH_MODELS:
+        print(f'SYSTEM (WARNING): {choice} not tested.\n\n> ', end='')
+    
+    print(f'SYSTEM: Loading {choice}...\n\n> ', end='')
+    
+    smi.set_model(choice)
+
+    print(f'SYSTEM: Loaded {choice} successfully.\n\n> ', end='')
+
+    if choice.endswith('.en'):
+        print(f'SYSTEM: Warning: {choice} can only transcribe English.\n\n> ', end='')
+        
