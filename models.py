@@ -3,10 +3,8 @@ import re
 import json
 from glob import glob
 from time import time, sleep
-from typing import Union
 import warnings
 
-import numpy as np
 import torch
 from transformers import pipeline, TextGenerationPipeline
 from cerebras.cloud.sdk import Cerebras
