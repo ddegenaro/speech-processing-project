@@ -270,6 +270,8 @@ class SpeechModelInterface:
             )
             result = self.model.transcribe(audio)
 
+        result['audio_length'] = len(audio) / SAMPLE_RATE
+
         return result
 
 def load_local_model(

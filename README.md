@@ -56,7 +56,7 @@ Type a message into the text entry at the bottom of the screen and press enter o
 
 You can record speech and transcribe it with Whisper by selecting from the "Speech models" menu, and then clicking "Speak." You can stop speaking at any time and the voice activity detection (VAD) will stop recording (you can also click "Stop"). If you find the VAD to be too aggressive, you can select a lower setting from the "VAD sensitivity" menu (0 is the most permissive, 3 is the most aggressive; default 2).
 
-You can then send the transcribed message as if it had been typed out. Check the "Auto-send" option to automatically send your message when you finish speaking.
+You can then send the transcribed message as if it had been typed out. Check the "Auto-send" option to automatically send your message when you finish speaking. If checked, this option will also record latency information about the overall pipeline to `pipeline_latency.log`.
 
 You can check the "State language" button to confirm that Whisper is correctly detecting the language you spoke. You can also check the "Announce latency" button to see the total time needed to transcribe your speech and fetch an LLM response to your message.
 
@@ -105,4 +105,6 @@ Information included:
 
 ## Data visualization
 
-All data visualizations used in the paper can be generated using the IPython notebook `eval_viz.ipynb`. Figures are automatically saved to the `figs` subfolder.
+All data visualizations used in the first paper can be generated using the IPython notebook `eval_viz.ipynb`. Figures are automatically saved to the `figs` subfolder.
+
+All data visualizations used in the second paper are handled similarly and can be generated using the IPython notebooks `spectrogram_viz.ipynb` and `latency_model.ipynb`.
