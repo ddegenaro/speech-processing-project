@@ -1,0 +1,16 @@
+{
+    "model_name": "distil-whisper/distil-large-v2",
+    "load_time": 4.3965373039245605,
+    "cpu_mem_usage": 2.8171396255493164,
+    "gpu_mem_usage": 2.8171396255493164,
+    "size_on_disk": 2.8171396255493164,
+    "en_results": "speech_evals/distil-whisper--distil-large-v2/en_results_eval_1.tsv",
+    "en_results_wer": 0.07474226804123711,
+    "en_results_rtf": 0.43665635817016396,
+    "es_results": "speech_evals/distil-whisper--distil-large-v2/es_results_eval_1.tsv",
+    "es_results_wer": 0.9564902102973168,
+    "es_results_rtf": 0.40346245465084235,
+    "wiki_results": "speech_evals/distil-whisper--distil-large-v2/wiki_results_eval_1.tsv",
+    "wiki_results_wer": 0.06483790523690773,
+    "wiki_results_rtf": 0.7681624620027431
+}

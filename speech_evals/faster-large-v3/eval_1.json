@@ -1,0 +1,16 @@
+{
+    "model_name": "faster-large-v3",
+    "load_time": 7.562330722808838,
+    "cpu_mem_usage": 5.796112060546875,
+    "gpu_mem_usage": -1.0,
+    "size_on_disk": 5.796112060546875,
+    "en_results": "speech_evals/faster-large-v3/en_results_eval_1.tsv",
+    "en_results_wer": 0.061855670103092786,
+    "en_results_rtf": 2.5008962567310515,
+    "es_results": "speech_evals/faster-large-v3/es_results_eval_1.tsv",
+    "es_results_wer": 0.11530094271211022,
+    "es_results_rtf": 2.228932149576044,
+    "wiki_results": "speech_evals/faster-large-v3/wiki_results_eval_1.tsv",
+    "wiki_results_wer": 0.04239401496259352,
+    "wiki_results_rtf": 3.898881757129966
+}

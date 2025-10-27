@@ -1,0 +1,101 @@
+	index	path	sentence	sentence_length	transcription	audio_length	transcription_length_tokens	latency	peak_memory	rtf	wer
+0	73	74.m4a	Athletics at the 1962 World Festival of Youth and Students	58	 Athletics at the 1962 World Festival of Youth and Students.	5.3333125	14	6.170943021774292	-1.0	1.1570563363339936	0.0
+1	68	69.m4a	2014 Kentucky Bank Tennis Championships – Women's doubles	57	 2014 Kentucky Bank Tennis Championships, women's doubles.	4.992	13	5.7336108684539795	-1.0	1.148559869481967	0.0
+2	47	48.m4a	List of UC Irvine Anteaters men's basketball head coaches	57	 List of UC Irvine Anteaters men's basketball head coaches.	5.2266875	16	6.725323915481567	-1.0	1.2867277631351726	0.0
+3	94	95.m4a	Sport climbing at the 2018 Asian Games – Women's combined	57	 Sport climbing at the 2018 Asian Games, women's combined.	5.1626875	14	6.371662139892578	-1.0	1.234175444454575	0.0
+4	77	78.m4a	Armenian Monastery of Saint Saviour (Jerusalem)	47	 Armenian Monastery of Saint Xavier, Jerusalem	4.9706875	11	5.851916074752808	-1.0	1.1772850485476722	0.16666666666666666
+5	62	63.m4a	Louisiana Tech University College of Education	46	 Louisiana Tech University College of Education	3.6906875	8	5.724612236022949	-1.0	1.5510964382714465	0.0
+6	66	67.m4a	Pakistan Institute for Parliamentary Services	45	 Pakistan Institute for Parliamentary Services	3.8186875	8	5.641640901565552	-1.0	1.477376952569581	0.0
+7	27	28.m4a	1929 Southern Illinois Maroons football team	44	 1929 Southern Illinois Maroons football team.	4.672	11	6.483520030975342	-1.0	1.3877397326573935	0.0
+8	97	98.m4a	St. Valentine's Day Massacre: In Your House	43	 St. Valentine's Day Massacre in your house.	3.52	13	6.105218887329102	-1.0	1.734437183900313	0.0
+9	28	29.m4a	South Boulevard–Park Row Historic District	42	 South Boulevard, Park Row Historic District	3.6266875	11	6.806855201721191	-1.0	1.8768794393564903	0.0
+10	83	84.m4a	The Pirates! in an Adventure with Whaling	41	 The Pirates in an Adventure with a Whaling	3.392	12	6.430997848510742	-1.0	1.8959309694901954	0.14285714285714285
+11	33	34.m4a	Brookland (Grassy Creek, North Carolina)	40	 Brookland, Grassy Creek, North Carolina.	3.6906875	12	5.893244028091431	-1.0	1.5967875979994053	0.0
+12	91	92.m4a	Rugby sevens at the 2024 Summer Olympics	40	 Rugby Sevens at the 2024 Summer Olympics.	4.16	12	5.742933034896851	-1.0	1.3805127487732813	0.0
+13	2	3.m4a	Japan as Number One: Lessons for America	40	 Japan is number one. Lessons for America.	3.9253125	12	6.219823122024536	-1.0	1.5845421535290594	0.14285714285714285
+14	82	83.m4a	Cincinnati College of Mortuary Science	38	 Cincinnati College of Mortuary Science	4.0746875	8	5.53703498840332	-1.0	1.3588858012800542	0.0
+15	60	61.m4a	Ecuador at the 2020 Summer Paralympics	38	 Ecuador at the 2020 Summer Paralympics.	3.4773125	12	6.521085977554321	-1.0	1.8753235372300652	0.0
+16	96	97.m4a	List of San Antonio Spurs head coaches	38	 List of San Antonio Spurs head coaches.	3.4133125	11	6.528501033782959	-1.0	1.9126584611819044	0.0
+17	10	11.m4a	Women's World Chess Championship 2000	37	 Women's World Chess Championship 2000	3.6906875	9	5.933171033859253	-1.0	1.607605909158999	0.0
+18	17	18.m4a	Cleveland Clinic Journal of Medicine	36	 Cleveland Clinic Journal of Medicine	2.816	7	5.579793214797974	-1.0	1.9814606586640533	0.0
+19	31	32.m4a	National Board of Review Awards 1978	36	 National Board of Review Awards 1978	4.1386875	8	5.461729049682617	-1.0	1.319676600294808	0.0
+20	72	73.m4a	World Heavyweight Championship (WWE)	36	 World Heavyweight Championship, WWE.	3.6266875	9	5.530296087265015	-1.0	1.52488905847692	0.0
+21	1	2.m4a	Kernel principal component analysis	35	 Kernel principal component analysis.	3.1786875	8	5.3745222091674805	-1.0	1.6907991770715052	0.0
+22	36	37.m4a	Knee cartilage replacement therapy	34	 Knee cartilage replacement therapy.	3.2426875	9	5.518439769744873	-1.0	1.7018105413318037	0.0
+23	5	6.m4a	2007 Detroit Sports Car Challenge	33	 2007 Detroit Sports Car Challenge	3.648	7	5.490310192108154	-1.0	1.5050192412577177	0.0
+24	41	42.m4a	Kazakhstan motorcycle Grand Prix	32	 Kazakhstan Motorcycle Grand Prix	3.3066875	7	5.406666994094849	-1.0	1.6350704425788192	0.0
+25	64	65.m4a	Women–Veterans chess tournaments	32	 Women Veterans Chess Tournaments	2.7733125	8	5.634884834289551	-1.0	2.031824698547153	0.0
+26	71	72.m4a	List of Downton Abbey characters	32	 List of Downton Abbey characters.	2.944	10	8.506037950515747	-1.0	2.889279195148012	0.0
+27	54	55.m4a	Varsity Football (South Africa)	31	 Varsity football, South Africa.	2.7946875	10	7.233525991439819	-1.0	2.588313001521572	0.0
+28	45	46.m4a	Health and Wellbeing Queensland	31	 Health and Well-Being Queensland	3.3066875	9	6.139419794082642	-1.0	1.8566676754554647	0.5
+29	78	79.m4a	Aberdeen Safer Community Trust	30	 Aberdeen Safer Community Trust	3.072	9	5.5488879680633545	-1.0	1.8062786354372897	0.0
+30	52	53.m4a	List of healthcare occupations	30	 List of healthcare occupations.	2.7306875	8	5.572149038314819	-1.0	2.0405663549252044	0.0
+31	84	85.m4a	Triangulation (social science)	30	 Triangulation Social Science	2.88	7	8.534250974655151	-1.0	2.9632815884219275	0.0
+32	7	8.m4a	Backfire (Friday Night Lights)	30	 Backfire Friday Night Lights	2.816	7	6.356243848800659	-1.0	2.257188866761598	0.0
+33	99	100.m4a	CBC Television local newscasts	30	 CBC Television Local Newscasts	3.84	9	5.842341184616089	-1.0	1.5214430168271065	0.0
+34	18	19.m4a	Papua and New Guinea Act 1949	29	 Papua and New Guinea Act 1949	4.352	9	5.746594190597534	-1.0	1.3204490327659775	0.0
+35	32	33.m4a	Local invariant cycle theorem	29	 Local invariant cycle theorem.	3.072	8	5.891240835189819	-1.0	1.9177216260383525	0.0
+36	49	50.m4a	Liberty Tree (disambiguation)	29	 Liberty Tree disambiguation.	3.264	9	5.642129898071289	-1.0	1.7285937187718412	0.0
+37	6	7.m4a	Hybrid input-output algorithm	29	 Hybrid input-output algorithm.	2.9013125	9	5.7046058177948	-1.0	1.9662155723641628	0.0
+38	67	68.m4a	2001 Fijian general election	28	 2001 Fijian General Election	3.2853125	8	5.564821004867554	-1.0	1.69384830358377	0.0
+39	69	70.m4a	1978 Seattle Mariners season	28	 1978 Seattle Mariners season.	3.264	8	5.430211782455444	-1.0	1.6636678255071828	0.0
+40	48	49.m4a	Malaysia–Venezuela relations	28	 Malaysia Venezuela relations	2.688	5	5.244788408279419	-1.0	1.9511861637944266	0.0
+41	50	51.m4a	Texas Flood (disambiguation)	28	 Texas Flood Disambiguation	3.072	9	5.4476318359375	-1.0	1.7733176549275715	0.0
+42	9	10.m4a	District Council of Snowtown	28	 District Council of Snowtown	2.7093125	7	5.348045110702515	-1.0	1.9739491515661316	0.0
+43	25	26.m4a	Miss Universe Thailand 2018	27	 Miss Universe Thailand 2018	3.4773125	6	5.341126918792725	-1.0	1.5359927871862895	0.0
+44	70	71.m4a	Church Pastoral Aid Society	27	 Church Pastoral Aid Society	2.7093125	7	5.424562215805054	-1.0	2.002191410479616	0.0
+45	8	9.m4a	National Hunger March, 1932	27	 National Hunger March, 1932	3.2213125	8	5.605663061141968	-1.0	1.740179836989416	0.0
+46	58	59.m4a	Lieutenant Governor's Court	27	 Lieutenant Governor's Court.	2.24	7	5.398571014404297	-1.0	2.4100763457162038	0.0
+47	34	35.m4a	WWF All American Wrestling	26	 WWF All American Wrestling.	3.328	8	5.448095798492432	-1.0	1.6370480163739278	0.0
+48	21	22.m4a	2019 Arctic Race of Norway	26	 2019 Arctic Race of Norway.	3.648	8	5.484879016876221	-1.0	1.5035304322577359	0.0
+49	0	1.m4a	The Genie from Down Under	25	 The genie from Down Under.	2.496	9	5.471870183944702	-1.0	2.192255682670153	0.0
+50	98	99.m4a	Romanian National Council	25	 Romanian National Council	2.56	5	5.219008922576904	-1.0	2.0386753603816032	0.0
+51	37	38.m4a	The Hound and the Falcon	24	 The Hound and the Falcon	2.4533125	8	5.452088117599487	-1.0	2.2223373979464447	0.0
+52	13	14.m4a	Smokeless Powder Company	24	 Smokeless Powder Company	2.4106875	6	5.3071129322052	-1.0	2.2014935292132227	0.0
+53	55	56.m4a	Feet of Clay (1924 film)	24	 Feet of Clay 1924 film	3.2213125	9	5.559638023376465	-1.0	1.725892170777118	0.0
+54	26	27.m4a	Divinity School Address	23	 Divinity School Address	2.4106875	7	5.3685948848724365	-1.0	2.226997437400093	0.0
+55	87	88.m4a	Texas State Highway 217	23	 Texas State Highway 217.	3.52	8	5.5387420654296875	-1.0	1.5735062685879795	0.0
+56	86	87.m4a	1994 Bob Save Superbowl	23	 1994 Bob save Super Bowl.	3.6906875	8	5.456745147705078	-1.0	1.4785172539547382	0.5
+57	4	5.m4a	Canada's Northern House	23	 Canada's Northern House.	2.6453125	7	5.430218935012817	-1.0	2.0527703003001787	0.0
+58	16	17.m4a	Social simulation game	22	 Social Simulation Game	2.752	6	5.865010023117065	-1.0	2.1311809677024223	0.0
+59	43	44.m4a	Sheppard Avenue Bridge	22	 Shepherd Avenue Bridge	2.9013125	5	5.658360958099365	-1.0	1.9502762829234581	0.3333333333333333
+60	11	12.m4a	Get You in the Morning	22	 Get you in the morning.	2.048	8	5.465620994567871	-1.0	2.6687602512538433	0.0
+61	75	76.m4a	The Company's in Love	21	 The company is in love.	2.6453125	8	5.455503940582275	-1.0	2.062328719416808	0.2
+62	80	81.m4a	Abortion in Mauritius	21	 Abortion in Mauritius	2.56	8	5.423377752304077	-1.0	2.11850693449378	0.0
+63	29	30.m4a	Thai Pacific Airlines	21	 Thai Pacific Airlines.	2.5813125	6	5.278592109680176	-1.0	2.0449256375119926	0.0
+64	88	89.m4a	Elves (Mayfair Games)	21	 Elves Mayfair Games	3.2213125	8	5.451284885406494	-1.0	1.6922558383908717	0.0
+65	30	31.m4a	General Electric GE90	21	 General Electric GE90	3.0293125	6	5.38479208946228	-1.0	1.7775624302419377	0.0
+66	89	90.m4a	Reflex Lightning Bug	20	 Reflex Lightning Bug	2.5386875	6	5.309590816497803	-1.0	2.091470815725765	0.0
+67	19	20.m4a	1967 Portugal floods	20	 1967 Portugal Floods	3.84	6	5.340577125549316	-1.0	1.3907752931118011	0.0
+68	14	15.m4a	Yellow soybean paste	20	 Yellow soybean paste.	3.1573125	6	5.339570045471191	-1.0	1.6911756582445328	0.0
+69	51	52.m4a	Central place theory	20	 Central Place Theory	2.4106875	5	5.339554071426392	-1.0	2.2149507438962504	0.0
+70	3	4.m4a	Fairy Falls (Oregon)	20	 Ferry Falls, Oregon.	2.9013125	8	5.513294219970703	-1.0	1.9002758992596294	0.3333333333333333
+71	95	96.m4a	Albatross (magazine)	20	 Albatross Magazine	2.5813125	6	5.416271209716797	-1.0	2.0982624961978824	0.0
+72	65	66.m4a	Marvel Puzzle Quest	19	 Marvel Puzzle Quest	2.4106875	7	5.486211061477661	-1.0	2.2757869120230896	0.0
+73	63	64.m4a	List of 2011 albums	19	 List of 2011 albums	2.9013125	6	5.365180015563965	-1.0	1.8492251405403468	0.0
+74	39	40.m4a	Thy Mighty Contract	19	 Thy mighty contract.	2.624	6	5.4304039478302	-1.0	2.0695136996304115	0.0
+75	90	91.m4a	Colchester Garrison	19	 Colchester Garrison	2.688	6	5.5059239864349365	-1.0	2.0483348163820447	0.0
+76	85	86.m4a	City Hindus Network	19	 City Hindus Network	2.8586875	5	5.284379959106445	-1.0	1.8485336221977553	0.0
+77	40	41.m4a	Notable Last Facts	18	 Notable last facts.	2.496	7	5.423274993896484	-1.0	2.172786455888015	0.0
+78	56	57.m4a	Banks Rowing Club	17	 Banks Rowing Club	2.304	6	5.3723509311676025	-1.0	2.3317495360970497	0.0
+79	35	36.m4a	Gross processing	16	 Gross processing.	2.56	5	5.218826055526733	-1.0	2.0386039279401302	0.0
+80	44	45.m4a	Declare Yourself	16	 Declare yourself.	2.048	7	5.807782173156738	-1.0	2.8358311392366886	0.0
+81	92	93.m4a	Myth of the Cave	16	 Myth of the Cave	2.4106875	6	5.468796968460083	-1.0	2.2685632079894567	0.0
+82	59	60.m4a	Hear the Silence	16	 Hear the silence.	1.8346875	6	7.044033765792847	-1.0	3.8393643417709264	0.0
+83	81	82.m4a	American Reaper	15	 American Reaper	2.1333125	4	5.739794015884399	-1.0	2.6905547198942483	0.0
+84	12	13.m4a	Tomato omelette	15	 Tomato omelet.	2.0053125	6	5.726334810256958	-1.0	2.855582264737769	0.5
+85	22	23.m4a	Alabama Feeling	15	 Alabama feeling.	2.0266875	5	5.663618087768555	-1.0	2.7945196720108822	0.0
+86	42	43.m4a	Sounds Like Us	14	 Sounds like us.	2.7306875	6	5.67027473449707	-1.0	2.0765007839590104	0.0
+87	15	16.m4a	Thermal bridge	14	 Thermal bridge.	2.0053125	6	5.439579248428345	-1.0	2.7125843221085715	0.0
+88	74	75.m4a	Selenium yeast	14	 Selenium yeast.	2.24	7	5.4901721477508545	-1.0	2.4509697088173454	0.0
+89	23	24.m4a	1777 in Norway	14	 1777 in Norway.	3.3706875	7	5.4289610385894775	-1.0	1.6106390873047347	0.0
+90	24	25.m4a	Jewish surname	14	 Jewish surname.	2.3466875	5	5.306610107421875	-1.0	2.261319458778331	0.0
+91	61	62.m4a	Songs of Italy	14	 Songs of Italy	2.2186875	5	5.356494188308716	-1.0	2.414262571141143	0.0
+92	46	47.m4a	Romani people	13	 Romani people.	2.4746875	6	5.3262529373168945	-1.0	2.1522931429996293	0.0
+93	20	21.m4a	Animal Antics	13	 Animal antics.	2.6026875	6	5.426954030990601	-1.0	2.085134704412497	0.0
+94	93	94.m4a	Simpson test	12	 Simpson Test	2.624	4	5.306671142578125	-1.0	2.0223594293361757	0.0
+95	79	80.m4a	Rampart Dam	11	 Rampart Dam	2.0053125	6	5.367891788482666	-1.0	2.6768355498121443	0.0
+96	76	77.m4a	Frank Monk	10	 Frank Monk	1.984	5	5.298379898071289	-1.0	2.6705543841085126	0.0
+97	38	39.m4a	Lifekeeper	10	 Life keeper.	2.112	5	5.281905889511108	-1.0	2.500902409806396	2.0
+98	53	54.m4a	Air-Ink	7	 Air Inc.	1.664	5	10.813748121261597	-1.0	6.49864670748894	0.5
+99	57	58.m4a	1710s	5	 1710s	2.1333125	5	5.41908597946167	-1.0	2.5402213597218735	0.0

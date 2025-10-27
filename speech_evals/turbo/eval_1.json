@@ -1,0 +1,16 @@
+{
+    "model_name": "turbo",
+    "load_time": 58.98392128944397,
+    "cpu_mem_usage": 3.006153106689453,
+    "gpu_mem_usage": -1.0,
+    "size_on_disk": 3.006153106689453,
+    "en_results": "speech_evals/turbo/en_results_eval_1.tsv",
+    "en_results_wer": 0.06013745704467354,
+    "en_results_rtf": 1.2957014872166448,
+    "es_results": "speech_evals/turbo/es_results_eval_1.tsv",
+    "es_results_wer": 0.14648295866569977,
+    "es_results_rtf": 1.0832802874638312,
+    "wiki_results": "speech_evals/turbo/wiki_results_eval_1.tsv",
+    "wiki_results_wer": 0.014962593516209476,
+    "wiki_results_rtf": 2.6643784837792923
+}

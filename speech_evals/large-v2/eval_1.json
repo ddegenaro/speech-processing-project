@@ -1,0 +1,16 @@
+{
+    "model_name": "large-v2",
+    "load_time": 131.3280599117279,
+    "cpu_mem_usage": 5.7421064376831055,
+    "gpu_mem_usage": -1.0,
+    "size_on_disk": 5.7421064376831055,
+    "en_results": "speech_evals/large-v2/en_results_eval_1.tsv",
+    "en_results_wer": 0.06099656357388316,
+    "en_results_rtf": 0.9784505634537506,
+    "es_results": "speech_evals/large-v2/es_results_eval_1.tsv",
+    "es_results_wer": 0.17403915881073242,
+    "es_results_rtf": 0.9046775515666982,
+    "wiki_results": "speech_evals/large-v2/wiki_results_eval_1.tsv",
+    "wiki_results_wer": 0.029925187032418952,
+    "wiki_results_rtf": 1.8552395551926624
+}

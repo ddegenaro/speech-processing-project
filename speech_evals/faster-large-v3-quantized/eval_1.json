@@ -1,0 +1,16 @@
+{
+    "model_name": "faster-large-v3-quantized",
+    "load_time": 5.457338094711304,
+    "cpu_mem_usage": 1.105804443359375,
+    "gpu_mem_usage": -1.0,
+    "size_on_disk": 1.105804443359375,
+    "en_results": "speech_evals/faster-large-v3-quantized/en_results_eval_1.tsv",
+    "en_results_wer": 0.061855670103092786,
+    "en_results_rtf": 2.6519324662338972,
+    "es_results": "speech_evals/faster-large-v3-quantized/es_results_eval_1.tsv",
+    "es_results_wer": 0.116751269035533,
+    "es_results_rtf": 1.8173544835006166,
+    "wiki_results": "speech_evals/faster-large-v3-quantized/wiki_results_eval_1.tsv",
+    "wiki_results_wer": 0.03740648379052369,
+    "wiki_results_rtf": 3.9829089759904766
+}

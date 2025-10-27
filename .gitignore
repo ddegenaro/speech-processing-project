@@ -4,3 +4,7 @@ hf_secret.txt
 cerebras_secret.txt
 scratch.ipynb
 tempCodeRunnerFile.py
+audio/cv-corpus-19.0-delta-2024-09-13/
+.vscode/
+speech_evals/*/en*.tsv
+speech_evals/*/es*.tsv

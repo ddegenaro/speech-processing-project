@@ -1,4 +1,4 @@
-# Chatbot v1.0
+# Chatbot v3.0
 
 ## Setup
 
@@ -64,7 +64,7 @@ You can clear all output from the screen by clicking "Clear output" if you find 
 
 You can clear the language model's memory (prevent it from conditioning on prior chat messages) by clicking "Clear chat history".
 
-Finally, you can subject the language model to an evaluation by clicking the red "Evaluate model" button.
+Finally, you can subject the language model to an evaluation by clicking the red "Evaluate text model" button, or evaluate your currently selected Whisper variant by clicking the red "Evaluate speech model" button.
 
 ## Spectrograms and audio I/O
 
@@ -74,7 +74,7 @@ By default, no audio file is loaded. You may load an audio file by clicking "Loa
 
 You can click "Play current audio" at any time to check what is loaded.
 
-## Customizing the evaluation
+## Customizing the language model evaluation
 
 You can customize the prompts fed to the language model during evaluation and the number of times each prompt is tested. To change the prompts, edit `eval_data.txt` and type one prompt per line.
 
@@ -84,13 +84,21 @@ By default, each prompt is evaluated 10 times. You can change this by editing th
 self.num_iters = 10 # for eval
 ```
 
-## Reading evaluations
+## Speech model evaluation (relatively fixed)
 
-Evaluations are automatically saved to `evals/model/path/eval_k.json` where `k` is used to identify different evaluation runs of the same language model.
+The speech models are evaluated on three small datasets:
+
+- The 100 longest (by gold transcript character count) validated audio-transcript pairs in the English CommonVoice v19.0 delta segment
+- The 100 longest (by gold transcript character count) "other" audio-transcript pairs in the English CommonVoice v19.0 delta segment (too few are validated)
+- 100 recordings of the project author reading 100 pseudo-randomly selected English Wikipedia article titles (1 title per recording, titles with learned borrowings and rare/foreign names excluded)
+
+## Reading language model evaluations
+
+Language model evaluations are automatically saved to `evals/model/path/eval_k.json` where `k` is used to identify different evaluation runs of the same language model.
 
 Information included:
 
-- Loading time
+- Loading time (s)
 - CPU memory usage (GB, -1.0 if not local)
 - GPU memory usage (GB, -1.0 if no GPU or not local)
 - Size on disk (GB, -1.0 if not local)
@@ -102,6 +110,71 @@ Information included:
   - Response generated
   - Latency in seconds (subtract 3 for remote due to `time.sleep` calls used to prevent rate limiting)
   - Estimated peak memory usage (GB, -1.0 if no GPU or not local)
+
+## Reading speech model evaluations
+
+Speech model evaluations are automatically saved to `speech_evals/model/eval_k.json` where `k` is used to identify different evaluation runs of the same language model. Sample-wise results are also generated and saved as `speech_evals/model/ds_results_eval_k.tsv`, where `ds` is either `en` for English CommonVoice, `es` for Spanish CommonVoice, or `wiki` for Wikipedia titles.
+
+Information included in the `.json` file:
+
+- Model name
+- Load time (s)
+- CPU memory usage (GB)
+- GPU memory usage (GB, -1.0 if no GPU or if implementation not compatible with system GPU)
+- Size on disk (GB)
+- Path to `.tsv` containing sample-wise results for English CommonVoice
+- Word error rate for English CommonVoice (out of 1.0)
+- Path to `.tsv` containing sample-wise results for Spanish CommonVoice
+- Word error rate for Spanish CommonVoice (out of 1.0)
+- Real-time factor for Spanish CommonVoice (transcription time / real time)
+- Path to `.tsv` containing sample-wise results for Wikipedi titles
+- Word error rate for Wikipedia titles (out of 1.0)
+- Real-time factor for Wikipedia titles (transcription time / real time)
+
+Sample-wise information included in each `.tsv` file:
+
+- File name (`path` - inside `audio/ds/clips` where `ds` is either `cv-corpus-19.0-delta-2024-09-13/en`, `cv-corpus-19.0-delta-2024-09-13/es`, or `wiki-titles`)
+- Gold transcript (`sentence`)
+- Whisper transcript (`transcription`)
+- Audio length (s) (`audio_length`)
+- Transcription length in tokens (`transcription_length_tokens`)
+- Latency (s) (`latency`)
+- Real-time factor (transcription time / real time) (`rtf`)
+- Word error rate (`wer`)
+
+Note: in this repository, all data relating to the Wikipedia titles is included due to the dataset being the author's own work. However, CommonVoice is not to be redistributed without the permission of Mozilla. As such, to re-produce any results relating to CommonVoice, it's necessary to pull your own copy of CommonVoice. The `audio` folder must have the following structure should you choose to do this:
+
+```markdown
+audio/
+- cv-corpus-19.0-delta-2024-09-13/
+  - en/
+    - clips/
+      - common_voice_en_40865211.mp3
+      - ...
+    clip_durations.tsv
+    invalidated.tsv
+    other.tsv
+    reported.tsv
+    unvalidated_sentences.tsv
+    validated_sentences.tsv
+    validated.tsv
+  - es/
+    - clips/
+      - common_voice_es_40867528.mp3
+      - ...
+    clip_durations.tsv
+    invalidated.tsv
+    other.tsv
+    reported.tsv
+    unvalidated_sentences.tsv
+    validated_sentences.tsv
+    validated.tsv
+- wiki-titles/
+  - clips/
+    - 1.m4a
+    - ...
+  - meta.tsv
+```
 
 ## Data visualization
 

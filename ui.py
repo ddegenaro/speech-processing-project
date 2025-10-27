@@ -372,6 +372,11 @@ def toggle_state_lang():
     app.state_lang = not app.state_lang
     print(f'SYSTEM: State language: {app.state_lang}.\n\n> ', end='')
 
+def toggle_quantized():
+    global app
+    app.use_quantized = not app.use_quantized
+    print(f'SYSTEM: Load quantized: {app.use_quantized}.\n\n> ', end='')
+
 class PrintLogger(object):  # create file like object
 
     def __init__(self, textbox: ScrolledText):  # pass reference to text widget
@@ -408,11 +413,11 @@ class MainGUI(tk.Tk):
     def __init__(self):
         tk.Tk.__init__(self)
 
-        self.version = '2.0'
+        self.version = '3.0'
 
         self.title(f"Chatbot UI v{self.version}")
-        w = 896 # width for the Tk root
-        h = 504 # height for the Tk root
+        w = 1200 # width for the Tk root
+        h = 750 # height for the Tk root
         # get screen width and height
         ws = self.winfo_screenwidth() # width of the screen
         hs = self.winfo_screenheight() # height of the screen
@@ -434,6 +439,7 @@ class MainGUI(tk.Tk):
         self.auto_send = False
         self.announce_latency = False
         self.state_lang = False
+        self.use_quantized = False
 
         # defaults for spectrogram from librosa
         self.n_fft = 1024
@@ -456,7 +462,7 @@ class MainGUI(tk.Tk):
         for model_name in AVAILABLE_SPEECH_MODELS:
             self.speech_menu.add_command(
                 label=model_name,
-                command=partial(load_speech_model, model_name, self.smi)
+                command=partial(load_speech_model, model_name, self.smi, self)
             )
         self.vad_menu = Menu(self.menu, tearoff=False)
         for sensitivity in AVAILABLE_VAD_MODELS:
@@ -507,18 +513,26 @@ class MainGUI(tk.Tk):
             font=("Arial", 16),
             command = clear_chat_history
         )
-        self.eval_button = Button(
+        self.text_eval_button = Button(
             self.button_frame,
-            text = "Evaluate model",
+            text = "Evaluate text model",
             fg = "red",
             font=("Arial", 16),
             command = self.mi.evaluate
+        )
+        self.speech_eval_button = Button(
+            self.button_frame,
+            text = "Evaluate speech model",
+            fg = "red",
+            font=("Arial", 16),
+            command = self.smi.evaluate
         )
         self.log_console_frame.pack(fill=BOTH, expand=True)
         self.log_widget.pack(fill=BOTH, expand=True)
         self.clear_log_button.pack(side=LEFT, padx=4)
         self.clear_history_button.pack(side=LEFT, padx=4)
-        self.eval_button.pack(side=LEFT, padx=4)
+        self.text_eval_button.pack(side=LEFT, padx=4)
+        self.speech_eval_button.pack(side=LEFT, padx=4)
         self.button_frame.pack(pady=4)
         
         # chat message entry
@@ -602,16 +616,20 @@ class MainGUI(tk.Tk):
             text = "State language",
             command = toggle_state_lang
         )
+        self.quantized_checkbox = Checkbutton(
+            self.button_frame,
+            text = "Load model quantized",
+            command = toggle_quantized
+        )
         
         self.load_audio_button.pack(padx=4, side=LEFT)
         self.playback_button.pack(padx=4, side=LEFT)
         self.spectrogram_button.pack(padx=4, side=LEFT)
         self.spectrogram_settings_button.pack(padx=4, side=LEFT)
         self.announce_latency_checkbox.pack(padx=4, side=LEFT)
-
         self.auto_send_checkbox.pack(padx=4, side=LEFT)
-
         self.state_lang_checkbox.pack(padx=4, side=LEFT)
+        self.quantized_checkbox.pack(padx=4, side=LEFT)
 
         global HF_API_KEY
 

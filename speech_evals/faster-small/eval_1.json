@@ -1,0 +1,16 @@
+{
+    "model_name": "faster-small",
+    "load_time": 0.42061376571655273,
+    "cpu_mem_usage": 0.6558380126953125,
+    "gpu_mem_usage": -1.0,
+    "size_on_disk": 0.6558380126953125,
+    "en_results": "speech_evals/faster-small/en_results_eval_1.tsv",
+    "en_results_wer": 0.07903780068728522,
+    "en_results_rtf": 0.7958372906052509,
+    "es_results": "speech_evals/faster-small/es_results_eval_1.tsv",
+    "es_results_wer": 0.3328498912255257,
+    "es_results_rtf": 0.6760895060933549,
+    "wiki_results": "speech_evals/faster-small/wiki_results_eval_1.tsv",
+    "wiki_results_wer": 0.0773067331670823,
+    "wiki_results_rtf": 0.9369307007036365
+}

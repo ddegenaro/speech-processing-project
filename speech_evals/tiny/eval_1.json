@@ -1,0 +1,16 @@
+{
+    "model_name": "tiny",
+    "load_time": 1.0645780563354492,
+    "cpu_mem_usage": 0.13852357864379883,
+    "gpu_mem_usage": -1.0,
+    "size_on_disk": 0.13852357864379883,
+    "en_results": "speech_evals/tiny/en_results_eval_1.tsv",
+    "en_results_wer": 0.18642611683848798,
+    "en_results_rtf": 0.07830632886657683,
+    "es_results": "speech_evals/tiny/es_results_eval_1.tsv",
+    "es_results_wer": 0.7759245830311821,
+    "es_results_rtf": 0.16058316596187888,
+    "wiki_results": "speech_evals/tiny/wiki_results_eval_1.tsv",
+    "wiki_results_wer": 0.16458852867830423,
+    "wiki_results_rtf": 0.07664182264455459
+}

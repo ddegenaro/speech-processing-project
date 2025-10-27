@@ -1,0 +1,16 @@
+{
+    "model_name": "faster-small-quantized",
+    "load_time": 0.4618489742279053,
+    "cpu_mem_usage": 0.47137451171875,
+    "gpu_mem_usage": -1.0,
+    "size_on_disk": 0.47137451171875,
+    "en_results": "speech_evals/faster-small-quantized/en_results_eval_1.tsv",
+    "en_results_wer": 0.0781786941580756,
+    "en_results_rtf": 0.3752248374385571,
+    "es_results": "speech_evals/faster-small-quantized/es_results_eval_1.tsv",
+    "es_results_wer": 0.350253807106599,
+    "es_results_rtf": 0.34038443729246043,
+    "wiki_results": "speech_evals/faster-small-quantized/wiki_results_eval_1.tsv",
+    "wiki_results_wer": 0.07481296758104738,
+    "wiki_results_rtf": 1.0128009816974615
+}
