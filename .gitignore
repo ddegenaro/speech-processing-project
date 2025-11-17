@@ -11,3 +11,6 @@ speech_evals/*/es*.tsv
 audio/encodec-eval/
 VALL-E-X/
 .DS_Store
+checkpoints/
+whisper/
+StyleTTS2/

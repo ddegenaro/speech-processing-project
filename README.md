@@ -181,3 +181,26 @@ audio/
 All data visualizations used in the first paper can be generated using the IPython notebook `eval_viz.ipynb`. Figures are automatically saved to the `figs` subfolder.
 
 All data visualizations used in the second paper are handled similarly and can be generated using the IPython notebooks `spectrogram_viz.ipynb` and `latency_model.ipynb`.
+
+## TTS Systems
+
+### Bark
+
+Fully implemented in HF. Just run `tts_eval/bark.py`.
+
+### gTTS
+
+May raise a circular import error. Simply run all the lines from `tts_eval/gtts.py` in an interactive session instead.
+
+### MMS
+
+Fully implemented in HF. Just run `tts_eval/mms.py`.
+
+### VALL-E-X
+
+Make the VALL-E-X repo a subdirectory of this project's directory. Follow the instructions at [`https://github.com/Plachtaa/VALL-E-X?tab=readme-ov-file#-installation`](https://github.com/Plachtaa/VALL-E-X?tab=readme-ov-file#-installation).
+
+In `VALL-E-X/utils.generation.py`, make the following modifications:
+
+- Change `tokenizer_path="./utils/g2p/bpe_69.json"` to `tokenizer_path="VALL-E-X/utils/g2p/bpe_69.json"`.
+- Change `checkpoint = torch.load(os.path.join(checkpoints_dir, model_checkpoint_name), map_location='cpu')` to `checkpoint = torch.load(os.path.join(checkpoints_dir, model_checkpoint_name), map_location='cpu', weights_only=False)`.

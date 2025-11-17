@@ -1,21 +1,25 @@
+import os
 import sys
 sys.path.append('VALL-E-X')
 
+import torch
+import soundfile as sf
 from utils.generation import SAMPLE_RATE, generate_audio, preload_models
-from scipy.io.wavfile import write as write_wav
-from IPython.display import Audio
 
 # download and load all models
 preload_models()
 
-# generate audio from text
-text_prompt = """
-Hello, my name is Nose. And uh, and I like hamburger. Hahaha... But I also have other interests such as playing tactic toast.
-"""
-audio_array = generate_audio(text_prompt)
+os.makedirs(os.path.join('tts_eval', 'vall-e-x'), exist_ok=True)
 
-# save audio to disk
-write_wav("vallex_generation.wav", SAMPLE_RATE, audio_array)
+with torch.no_grad():
 
-# play text in notebook
-Audio(audio_array, rate=SAMPLE_RATE)
+    for i, text in enumerate(open(
+        os.path.join('text', 'tts_prompts.txt'), 'r', encoding='utf-8'
+    ).readlines()):
+        audio_array = generate_audio(text)
+
+        sf.write(
+            os.path.join('tts_eval', 'vall-e-x', f'{i}.wav'),
+            audio_array,
+            samplerate=SAMPLE_RATE
+        )
