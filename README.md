@@ -190,11 +190,27 @@ Fully implemented in HF. Just run `tts_eval/bark.py`.
 
 ### gTTS
 
-May raise a circular import error. Simply run all the lines from `tts_eval/gtts.py` in an interactive session instead.
+Requires installation of `gtts` via `pip`. May raise a circular import error. Simply run all the lines from `tts_eval/gtts.py` in an interactive session instead.
 
 ### MMS
 
 Fully implemented in HF. Just run `tts_eval/mms.py`.
+
+### Parler
+
+Requires installation of `parler-tts` via `pip`.
+
+### Piper
+
+Requires installation of `piper` via `pip`. Start by running `tts_eval/piper_setup.py`, which will download a voice embedding.
+
+In your installation of `piper`, depending on your Python version, you may need to make these changes:
+
+- Add `import os` to the top of the file
+- Change `model_path = download_dir / f"{voice_code}.onnx"` to `model_path = Path(os.path.join(download_dir, f"{voice_code}.onnx"))`
+- Change `config_path = download_dir / f"{voice_code}.onnx.json"` to `model_path = Path(os.path.join(download_dir, f"{voice_code}.onnx"))`
+
+This library may also have a circular import error. If so, just run the lines in an interactive session.
 
 ### VALL-E-X
 

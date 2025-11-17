@@ -13,4 +13,4 @@ VALL-E-X/
 .DS_Store
 checkpoints/
 whisper/
-StyleTTS2/
+piper_voices/
