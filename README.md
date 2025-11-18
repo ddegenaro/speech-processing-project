@@ -196,7 +196,7 @@ All data visualizations used in the second paper are handled similarly and can b
 - `'from_duration'`: the length of the original audio file, in seconds.
 - `'to_duration'`: the length of the reconstructed audio file, in seconds.
 - `'bandwith_kbps'`: the bandwidth (typo in the name) used by the model in this instance, corresponding to more or fewer codebooks.
-- `'bitrate_kbps'`: the bitrate of the reconstructed audio file, in KB/s, defined as the size of the file in bits divided by its duration.
+- `'bitrate_kbps'`: the bitrate of the reconstructed audio file, in Kb/s, defined as the size of the file in bits divided by its duration.
 - `'num_codebooks'`: effectively an alias of `'bandwith_kbps`, having a 1-to-1 mapping.
 
 ## TTS systems
@@ -240,7 +240,7 @@ In `VALL-E-X/utils.generation.py`, make the following modifications:
 - Change `tokenizer_path="./utils/g2p/bpe_69.json"` to `tokenizer_path="VALL-E-X/utils/g2p/bpe_69.json"`.
 - Change `checkpoint = torch.load(os.path.join(checkpoints_dir, model_checkpoint_name), map_location='cpu')` to `checkpoint = torch.load(os.path.join(checkpoints_dir, model_checkpoint_name), map_location='cpu', weights_only=False)`.
 
-FInally, run `tts_eval/valle.py`.
+Finally, run `tts_eval/valle.py`.
 
 ## TTS Evaluation
 
