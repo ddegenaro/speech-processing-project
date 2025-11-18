@@ -182,6 +182,8 @@ All data visualizations used in the first paper can be generated using the IPyth
 
 All data visualizations used in the second paper are handled similarly and can be generated using the IPython notebooks `spectrogram_viz.ipynb` and `latency_model.ipynb`.
 
+All data visualizations used in the fourth paper are handled similarly and can be generated using the IPython notebooks `encodec_viz.ipynb` and `tts_viz.ipynb`.
+
 ## Encodec evaluation
 
 `encodec_eval.py` will run the 48 kHz FAIR Encodec model on all audio files stored at `audio/encodec-eval/originals`. It will create two other subdirectories, `audio/encodec-eval/compressed`, where the audio encoding is written as a JSON with near optimal compression (while still being readable), and `audio/encodec-eval/compressed`, where the encodings are passed through the decoder to reconstruct the original audio as closely as possible. It will also generate `encodec_eval/data.json`, which stores useful statistics about each Encodec run:
