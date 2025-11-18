@@ -33,7 +33,11 @@ with torch.no_grad():
         audio_sample.shape
 
         # pre-process the inputs
-        inputs = processor(raw_audio=audio_sample, sampling_rate=processor.sampling_rate, return_tensors="pt")
+        inputs = processor(
+            raw_audio=audio_sample,
+            sampling_rate=processor.sampling_rate,
+            return_tensors="pt"
+        )
 
         for target_bandwith in model.config.target_bandwidths:
             
@@ -87,7 +91,7 @@ with torch.no_grad():
                 'from_size_kb': from_size / 1024,
                 'to_size_kb': to_size / 1024,
                 'audio_compression_ratio': to_size / from_size,
-                'encoder_rep_size': enc_rep_size,
+                'encoder_rep_size': enc_rep_size, # TODO: should divide by 1024 in the future
                 'encoder_compression_ratio': enc_rep_size / from_size,
                 'from_duration': from_duration,
                 'to_duration': to_duration,

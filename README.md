@@ -182,7 +182,26 @@ All data visualizations used in the first paper can be generated using the IPyth
 
 All data visualizations used in the second paper are handled similarly and can be generated using the IPython notebooks `spectrogram_viz.ipynb` and `latency_model.ipynb`.
 
-## TTS Systems
+## Encodec evaluation
+
+`encodec_eval.py` will run the 48 kHz FAIR Encodec model on all audio files stored at `audio/encodec-eval/originals`. It will create two other subdirectories, `audio/encodec-eval/compressed`, where the audio encoding is written as a JSON with near optimal compression (while still being readable), and `audio/encodec-eval/compressed`, where the encodings are passed through the decoder to reconstruct the original audio as closely as possible. It will also generate `encodec_eval/data.json`, which stores useful statistics about each Encodec run:
+
+- `'from'`: the path to the original audio file.
+- `'to'`: the path to the reconstructed audio file under consideration.
+- `'from_size_kb'`: the size of the original audio file, in KB.
+- `'to_size_kb'`: the size of the reconstructed audio file, in KB.
+- `'audio_compression_ratio'`: the ratio of the above two (less than 1 if compression achieved).
+- `'encoder_rep_size'`: the size of the JSON file storing the encoding, in bytes (accident - should be KB for comparison).
+- `'encoder_compression_ratio'`: the ratio of the size of the JSON file to the original audio (generally much better compression than `audio_compression_ratio`).
+- `'from_duration'`: the length of the original audio file, in seconds.
+- `'to_duration'`: the length of the reconstructed audio file, in seconds.
+- `'bandwith_kbps'`: the bandwidth (typo in the name) used by the model in this instance, corresponding to more or fewer codebooks.
+- `'bitrate_kbps'`: the bitrate of the reconstructed audio file, in KB/s, defined as the size of the file in bits divided by its duration.
+- `'num_codebooks'`: effectively an alias of `'bandwith_kbps`, having a 1-to-1 mapping.
+
+## TTS systems
+
+Prompts for TTS Evaluation can be found in `text/tts_prompts.txt`, one prompt per line. 15 prompts are included. When running any of the following TTS systems, they will be given each of those prompts. Generated audio files will be saved to `tts_eval/<name>`, where `<name>` is the name of the system (the same name as each of the Python scripts that follow).
 
 ### Bark
 
@@ -198,7 +217,7 @@ Fully implemented in HF. Just run `tts_eval/mms.py`.
 
 ### Parler
 
-Requires installation of `parler-tts` via `pip`.
+Requires installation of `parler-tts` via `pip`. Then, run `tts_eval/parler.py`.
 
 ### Piper
 
@@ -210,7 +229,7 @@ In your installation of `piper`, depending on your Python version, you may need 
 - Change `model_path = download_dir / f"{voice_code}.onnx"` to `model_path = Path(os.path.join(download_dir, f"{voice_code}.onnx"))`
 - Change `config_path = download_dir / f"{voice_code}.onnx.json"` to `model_path = Path(os.path.join(download_dir, f"{voice_code}.onnx"))`
 
-This library may also have a circular import error. If so, just run the lines in an interactive session.
+Finally, run `tts_eval/piper.py`. This library may also have a circular import error. If so, just run the lines in an interactive session.
 
 ### VALL-E-X
 
@@ -220,3 +239,9 @@ In `VALL-E-X/utils.generation.py`, make the following modifications:
 
 - Change `tokenizer_path="./utils/g2p/bpe_69.json"` to `tokenizer_path="VALL-E-X/utils/g2p/bpe_69.json"`.
 - Change `checkpoint = torch.load(os.path.join(checkpoints_dir, model_checkpoint_name), map_location='cpu')` to `checkpoint = torch.load(os.path.join(checkpoints_dir, model_checkpoint_name), map_location='cpu', weights_only=False)`.
+
+FInally, run `tts_eval/valle.py`.
+
+## TTS Evaluation
+
+After running all the `tts_eval/*.py` scripts, one may run `a_b_test_tts.py` to get an interactive annotation interface. You may play the speech as many times as you like before selecting one of the systems. Annotations will be stored in `tts_eval/rankings.json`. Finally, one can run `elo.py` to produce `tts_eval/elo_rankings.csv`, which yields an aggregate score for each system.
