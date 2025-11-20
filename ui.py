@@ -5,6 +5,7 @@ from functools import partial
 import time
 import threading
 
+from piper import PiperVoice, download_voices
 import tkinter as tk
 from tkinter import (
     Menu,
@@ -24,6 +25,7 @@ from tkinter.scrolledtext import ScrolledText
 from huggingface_hub import login
 import sounddevice as sd
 import soundfile as sf
+import wave
 import numpy as np
 import webrtcvad
 import librosa
@@ -54,6 +56,20 @@ else:
 
 current_speak_stop_event = None
 log_path = 'pipeline_latency.log'
+
+def read_aloud():
+    global app
+    
+    text = app.mi.message_history[-1]['content']
+    
+    with wave.open(os.path.join('temp.wav'), "wb") as wav_file:
+        app.voice.synthesize_wav(text, wav_file)
+    
+    data = whisper.load_audio('temp.wav', sr=SAMPLE_RATE)
+    
+    sd.play(data, samplerate=SAMPLE_RATE)
+    
+    os.remove('temp.wav')
 
 def set_vad_sensitivity(sensitivity):
     global app
@@ -86,6 +102,8 @@ def send_message(dummy=None):
 
     if response:
         print(f'RESPONSE: {response}\n\n> ', end='')
+        if app.auto_read:
+            read_aloud()
         return response
     else:
         print(f'SYSTEM: Model did not respond.\n\n> ', end='')
@@ -361,6 +379,11 @@ def toggle_auto_send():
     global app
     app.auto_send = not app.auto_send
     print(f'SYSTEM: Auto-send set to {app.auto_send}.\n\n> ', end='')
+    
+def toggle_auto_read():
+    global app
+    app.auto_read = not app.auto_read
+    print(f'SYSTEM: Auto-read-aloud set to {app.auto_read}.\n\n> ', end='')
 
 def toggle_announce_latency():
     global app
@@ -435,8 +458,17 @@ class MainGUI(tk.Tk):
         self.mi = ModelInterface()
         self.smi = SpeechModelInterface()
         self.vad = webrtcvad.Vad(1)
+        voice_path = "piper_voices/en_US-lessac-medium.onnx"
+        if not os.path.exists(voice_path):
+            import ssl
+            ssl._create_default_https_context = ssl._create_unverified_context
+            os.makedirs('piper_voices', exist_ok=True)
+            download_voices.download_voice('en_US-lessac-medium', download_dir='piper_voices')
+        self.voice = PiperVoice.load(voice_path)
+        
         self.curr_audio = None
         self.auto_send = False
+        self.auto_read = False
         self.announce_latency = False
         self.state_lang = False
         self.use_quantized = False
@@ -561,11 +593,19 @@ class MainGUI(tk.Tk):
             font=("Arial", 16),
             command = speak
         )
+        self.read_aloud_button = Button(
+            self.file_path_entry_frame,
+            text = "Read",
+            fg = "green",
+            font = ("Arial", 16),
+            command = read_aloud
+        )
         self.file_path_entry_frame.pack(pady=4, fill=X, expand=False)
         self.glob_path_desc.pack(padx=4, side=LEFT)
         self.glob_path_entry.pack(padx=4, side=LEFT, fill=X, expand=True)
         self.send_button.pack(side=LEFT, padx=4)
         self.speak_button.pack(side=LEFT, padx=4)
+        self.read_aloud_button.pack(side=LEFT, padx=4)
         self.bind('<Return>', send_message)
 
         # audio stuff
@@ -606,6 +646,11 @@ class MainGUI(tk.Tk):
             text = "Auto-send",
             command = toggle_auto_send
         )
+        self.auto_read_checkbox = Checkbutton(
+            self.file_path_entry_frame,
+            text = "Auto-speak",
+            command = toggle_auto_read
+        )
         self.announce_latency_checkbox = Checkbutton(
             self.audio_buttons,
             text = "Announce latency",
@@ -628,6 +673,7 @@ class MainGUI(tk.Tk):
         self.spectrogram_settings_button.pack(padx=4, side=LEFT)
         self.announce_latency_checkbox.pack(padx=4, side=LEFT)
         self.auto_send_checkbox.pack(padx=4, side=LEFT)
+        self.auto_read_checkbox.pack(padx=4, side=LEFT)
         self.state_lang_checkbox.pack(padx=4, side=LEFT)
         self.quantized_checkbox.pack(padx=4, side=LEFT)
 

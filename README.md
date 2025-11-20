@@ -54,6 +54,8 @@ Only 6 language models (3 local, 3 using free API inference providers) have been
 
 Type a message into the text entry at the bottom of the screen and press enter or click the "Send" button to send it to the language model you've selected.
 
+Responses can be read aloud via Piper TTS by clicking the "Read" button. To automatically read messages aloud, check the "Auto-speak" checkbox.
+
 You can record speech and transcribe it with Whisper by selecting from the "Speech models" menu, and then clicking "Speak." You can stop speaking at any time and the voice activity detection (VAD) will stop recording (you can also click "Stop"). If you find the VAD to be too aggressive, you can select a lower setting from the "VAD sensitivity" menu (0 is the most permissive, 3 is the most aggressive; default 2).
 
 You can then send the transcribed message as if it had been typed out. Check the "Auto-send" option to automatically send your message when you finish speaking. If checked, this option will also record latency information about the overall pipeline to `pipeline_latency.log`.
@@ -64,7 +66,7 @@ You can clear all output from the screen by clicking "Clear output" if you find 
 
 You can clear the language model's memory (prevent it from conditioning on prior chat messages) by clicking "Clear chat history".
 
-Finally, you can subject the language model to an evaluation by clicking the red "Evaluate text model" button, or evaluate your currently selected Whisper variant by clicking the red "Evaluate speech model" button.
+You can subject the language model to an evaluation by clicking the red "Evaluate text model" button, or evaluate your currently selected Whisper variant by clicking the red "Evaluate speech model" button.
 
 ## Spectrograms and audio I/O
 
