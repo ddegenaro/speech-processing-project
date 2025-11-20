@@ -2,6 +2,8 @@
 
 ## Setup
 
+The following worked on an Apple M4 16GB chip.
+
 Run the following command:
 
 ```bash
